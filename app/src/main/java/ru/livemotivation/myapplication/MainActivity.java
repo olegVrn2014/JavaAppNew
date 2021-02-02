@@ -82,6 +82,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     //добрый вечер github
+    //plhfdcndeqnty
 
 
     private void setupViewPager(ViewPager viewPager) {
