@@ -1,0 +1,95 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="textView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">10dp</item>
+        <item name="android:layout_marginTop">15dp</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="android:textStyle">italic</item>
+    </style>
+
+    <style name="textViewZagolovok">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@color/colorOrange</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textSize">40sp</item>
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="textViewStrip">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">15dp</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textSize">30sp</item>
+        <item name="android:textColor">@color/colorOrange</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="button_style_previous">
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:textStyle">italic</item>
+        <item name="android:text">@string/previous_btn</item>
+        <item name="android:onClick">onClickPrevious</item>
+        <item name="android:background">@drawable/buttons</item>
+    </style>
+
+    <style name="button_style_lessons">
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:textStyle">italic</item>
+        <item name="android:text">@string/lessons_btn</item>
+        <item name="android:onClick">onClickLessons</item>
+        <item name="android:background">@drawable/buttons</item>
+    </style>
+
+    <style name="button_style_next">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:textStyle">italic</item>
+        <item name="android:text">@string/next_btn</item>
+        <item name="android:onClick">onClickNext</item>
+        <item name="android:background">@drawable/buttons</item>
+    </style>
+
+    <style name="MyCardViewText" parent="Theme.AppCompat.Light">
+        <item name="cardCornerRadius">4dp</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:gravity">center_vertical|center_horizontal</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="cardElevation">4dp</item>
+        <item name="contentPaddingBottom">24dp</item>
+        <item name="contentPaddingTop">24dp</item>
+        <item name="contentPaddingLeft">16dp</item>
+        <item name="contentPaddingRight">16dp</item>
+        <item name="cardBackgroundColor">@color/colorOrange</item>
+    </style>
+
+
+
+</resources>

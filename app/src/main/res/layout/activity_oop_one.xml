@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".lessons_oop.OopOneActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/bottomBar">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="25dp"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/textViewZagolovok"
+                    android:text="@string/lessonsOop01_01" />
+
+
+                <TextView
+                    style="@style/textView"
+                    android:text="@string/lessonsOop01_02" />
+
+                <com.zolad.zoominimageview.ZoomInImageView
+                    android:id="@+id/lessOop01_image01"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    style="@style/textView"
+                    android:text="@string/lessonsOop01_03" />
+
+                <com.zolad.zoominimageview.ZoomInImageView
+                    android:id="@+id/lessOop01_image02"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    style="@style/textView"
+                    android:text="@string/lessonsOop01_04" />
+
+                <com.zolad.zoominimageview.ZoomInImageView
+                    android:id="@+id/lessOop01_image03"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    style="@style/textView"
+                    android:text="@string/lessonsOop01_05" />
+
+                <TextView
+                    style="@style/textViewZagolovok"
+                    android:text="@string/lessonsOop01_07" />
+
+                <TextView
+                    style="@style/textView"
+                    android:text="@string/lessonsOop01_06" />
+
+                <com.zolad.zoominimageview.ZoomInImageView
+                    android:id="@+id/lessOop01_image04"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    style="@style/textView"
+                    android:text="@string/lessonsOop01_08" />
+
+                <com.zolad.zoominimageview.ZoomInImageView
+                    android:id="@+id/lessOop01_image05"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    style="@style/textView"
+                    android:text="@string/lessonsOop01_09" />
+
+                <com.zolad.zoominimageview.ZoomInImageView
+                    android:id="@+id/lessOop01_image06"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <com.zolad.zoominimageview.ZoomInImageView
+                    android:id="@+id/lessOop01_image07"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <com.zolad.zoominimageview.ZoomInImageView
+                    android:id="@+id/lessOop01_image08"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    style="@style/textView"
+                    android:text="@string/lessonsOop01_10" />
+
+                <com.zolad.zoominimageview.ZoomInImageView
+                    android:id="@+id/lessOop01_image09"
+                    android:layout_marginBottom="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    style="@style/textViewZagolovok"
+                    android:text="@string/lessonsOop01_11" />
+
+                <TextView
+                    style="@style/textView"
+                    android:text="@string/lessonsOop01_12" />
+
+                <com.zolad.zoominimageview.ZoomInImageView
+                    android:id="@+id/lessOop01_image10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <com.zolad.zoominimageview.ZoomInImageView
+                    android:id="@+id/lessOop01_image11"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    style="@style/textView"
+                    android:text="@string/lessonsOop01_13" />
+
+                <com.zolad.zoominimageview.ZoomInImageView
+                    android:id="@+id/lessOop01_image12"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    style="@style/textView"
+                    android:text="@string/lessonsOop01_14" />
+
+                <com.zolad.zoominimageview.ZoomInImageView
+                    android:id="@+id/lessOop01_image13"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    style="@style/textView"
+                    android:text="@string/lessonsOop01_15" />
+
+                <TextView
+                    style="@style/textViewZagolovok"
+                    android:text="@string/lessonsOop01_16" />
+
+                <TextView
+                    style="@style/textView"
+                    android:text="@string/lessonsOop01_17" />
+
+                <com.zolad.zoominimageview.ZoomInImageView
+                    android:id="@+id/lessOop01_image14"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <com.zolad.zoominimageview.ZoomInImageView
+                    android:id="@+id/lessOop01_image15"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    style="@style/textView"
+                    android:text="@string/lessonsOop01_18" />
+
+                <com.zolad.zoominimageview.ZoomInImageView
+                    android:id="@+id/lessOop01_image16"
+                    android:layout_marginBottom="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+
+                    <Button style="@style/button_style_previous" />
+                    <Button style="@style/button_style_lessons" />
+                    <Button style="@style/button_style_next"/>
+
+                </LinearLayout>
+
+                <TextView
+                    style="@style/textViewStrip"
+                    android:text="@string/strip" />
+
+            </LinearLayout>
+
+
+        </ScrollView>
+
+        <RelativeLayout
+            android:id="@+id/bottomBar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true">
+
+            <com.google.android.material.bottomnavigation.BottomNavigationView
+                android:id="@+id/bottomNavView_Bar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/white_grey_border_top"
+                app:menu="@menu/bottom_navigation_menu">
+
+
+            </com.google.android.material.bottomnavigation.BottomNavigationView>
+        </RelativeLayout>
+
+
+
+
+
+    </RelativeLayout>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

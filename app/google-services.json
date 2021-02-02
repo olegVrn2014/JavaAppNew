@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "296204884467",
+    "firebase_url": "https://javaapp-497c0.firebaseio.com",
+    "project_id": "javaapp-497c0",
+    "storage_bucket": "javaapp-497c0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:296204884467:android:736b99bee944b63730da86",
+        "android_client_info": {
+          "package_name": "ru.livemotivation.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "296204884467-hhhs0ctetnfn1373hvh3rol1lbd67t0e.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "ru.livemotivation.myapplication",
+            "certificate_hash": "667c160f58c11f3c5e71aee1e5518a07b1ccc7aa"
+          }
+        },
+        {
+          "client_id": "296204884467-ptld8ogithdk83dof66l9opcmffrrt47.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB7z9ghb53ps9sZL5JFLDlwVYQRh7P0LdU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "296204884467-ptld8ogithdk83dof66l9opcmffrrt47.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

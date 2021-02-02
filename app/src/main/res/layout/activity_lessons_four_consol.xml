@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".lessons_java.LessonsFourConsolActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/bottomBar">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <TextView
+                    style="@style/textViewZagolovok"
+                    android:text="@string/Consol" />
+
+                <TextView
+                    style="@style/textView"
+                    android:text="@string/lessons04_01" />
+
+                <TextView
+                    style="@style/textViewZagolovok"
+                    android:text="@string/lessons04_02" />
+
+                <TextView
+                    style="@style/textView"
+                    android:text="@string/lessons04_03" />
+
+                <ImageView
+                    android:contentDescription="@string/less04_image01"
+                    android:id="@+id/less04_image01"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    style="@style/textView"
+                    android:text="@string/lessons04_04" />
+
+                <ImageView
+                    android:contentDescription="@string/less04_image02"
+                    android:id="@+id/less04_image02"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    style="@style/textView"
+                    android:text="@string/lessons04_05" />
+
+                <ImageView
+                    android:contentDescription="@string/less04_image03"
+                    android:id="@+id/less04_image03"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    style="@style/textView"
+                    android:text="@string/lessons04_06" />
+
+                <ImageView
+                    android:contentDescription="@string/less04_image04"
+                    android:id="@+id/less04_image04"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    style="@style/textView"
+                    android:text="@string/lessons04_07" />
+
+                <ImageView
+                    android:contentDescription="@string/less04_image05"
+                    android:id="@+id/less04_image05"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    style="@style/textView"
+                    android:text="@string/lessons04_08" />
+
+                <ImageView
+                    android:contentDescription="@string/less04_image06"
+                    android:id="@+id/less04_image06"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    style="@style/textView"
+                    android:text="@string/lessons04_09" />
+
+                <ImageView
+                    android:contentDescription="@string/less04_image07"
+                    android:id="@+id/less04_image07"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    style="@style/textView"
+                    android:text="@string/lessons04_10" />
+
+                <ImageView
+                    android:contentDescription="@string/less04_image08"
+                    android:id="@+id/less04_image08"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    style="@style/textView"
+                    android:text="@string/lessons04_11" />
+
+                <TextView
+                    style="@style/textView"
+                    android:text="@string/lessons04_12" />
+
+                <ImageView
+                    android:contentDescription="@string/less04_image09"
+                    android:id="@+id/less04_image09"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    style="@style/textView"
+                    android:text="@string/lessons04_13" />
+
+                <ImageView
+                    android:contentDescription="@string/less04_image10"
+                    android:id="@+id/less04_image10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    style="@style/textView"
+                    android:text="@string/lessons04_14" />
+
+                <ImageView
+                    android:contentDescription="@string/less04_image11"
+                    android:id="@+id/less04_image11"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    style="@style/textViewZagolovok"
+                    android:text="@string/lessons04_15" />
+
+                <TextView
+                    style="@style/textView"
+                    android:text="@string/lessons04_17" />
+
+                <ImageView
+                    android:contentDescription="@string/less04_image12"
+                    android:id="@+id/less04_image12"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    style="@style/textView"
+                    android:text="@string/lessons04_18" />
+
+                <ImageView
+                    android:contentDescription="@string/less04_image13"
+                    android:id="@+id/less04_image13"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    style="@style/textView"
+                    android:text="@string/lessons04_19" />
+
+                <ImageView
+                    android:contentDescription="@string/less04_image14"
+                    android:id="@+id/less04_image14"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    style="@style/textView"
+                    android:text="@string/lessons04_20" />
+
+                <ImageView
+                    android:contentDescription="@string/less04_image15"
+                    android:id="@+id/less04_image15"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    style="@style/textView"
+                    android:text="@string/lessons04_21" />
+
+                <ImageView
+                    android:contentDescription="@string/less04_image16"
+                    android:id="@+id/less04_image16"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    style="@style/textView"
+                    android:layout_marginBottom="25dp"
+                    android:text="@string/lessons04_22" />
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+
+                    <Button style="@style/button_style_previous" />
+                    <Button style="@style/button_style_lessons" />
+                    <Button style="@style/button_style_next"/>
+
+                </LinearLayout>
+
+                <TextView
+                    style="@style/textViewStrip"
+                    android:text="@string/strip" />
+
+            </LinearLayout>
+
+
+        </ScrollView>
+
+        <RelativeLayout
+            android:id="@+id/bottomBar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true">
+
+            <com.google.android.material.bottomnavigation.BottomNavigationView
+                android:id="@+id/bottomNavView_Bar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/white_grey_border_top"
+                app:menu="@menu/bottom_navigation_menu">
+
+
+            </com.google.android.material.bottomnavigation.BottomNavigationView>
+        </RelativeLayout>
+
+
+
+
+
+    </RelativeLayout>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

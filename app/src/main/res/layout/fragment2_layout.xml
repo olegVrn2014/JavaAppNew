@@ -1,0 +1,438 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="UselessParent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorOrange"
+                android:text="@string/explanations"
+                android:textAlignment="center"
+                android:textColor="@color/colorWhite"
+                android:textSize="40sp"
+                android:textStyle="bold" />
+
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="15dp"
+                android:padding="15dp"
+                app:cardCornerRadius="25dp">
+
+                <TextView
+                    style="@style/MyCardViewText"
+                    android:text="@string/fragment02_01" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="15dp"
+                android:padding="15dp"
+                app:cardCornerRadius="25dp">
+
+                <TextView
+                    style="@style/MyCardViewText"
+                    android:text="@string/fragment02_02" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="15dp"
+                android:padding="15dp"
+                app:cardCornerRadius="25dp">
+
+                <TextView
+                    style="@style/MyCardViewText"
+                    android:text="@string/fragment02_03" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="15dp"
+                android:padding="15dp"
+                app:cardCornerRadius="25dp">
+
+                <TextView
+                    style="@style/MyCardViewText"
+                    android:text="@string/fragment02_04" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="15dp"
+                android:padding="15dp"
+                app:cardCornerRadius="25dp">
+
+                <TextView
+                    style="@style/MyCardViewText"
+                    android:text="@string/fragment02_05" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="15dp"
+                android:padding="15dp"
+                app:cardCornerRadius="25dp">
+
+                <TextView
+                    style="@style/MyCardViewText"
+                    android:text="@string/fragment02_06" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="15dp"
+                android:padding="15dp"
+                app:cardCornerRadius="25dp">
+
+                <TextView
+                    style="@style/MyCardViewText"
+                    android:text="@string/fragment02_07" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="15dp"
+                android:padding="15dp"
+                app:cardCornerRadius="25dp">
+
+                <TextView
+                    style="@style/MyCardViewText"
+                    android:text="@string/fragment02_08" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="15dp"
+                android:padding="15dp"
+                app:cardCornerRadius="25dp">
+
+                <TextView
+                    style="@style/MyCardViewText"
+                    android:text="@string/fragment02_09" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="15dp"
+                android:padding="15dp"
+                app:cardCornerRadius="25dp">
+
+                <TextView
+                    style="@style/MyCardViewText"
+                    android:text="@string/fragment02_10" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="15dp"
+                android:padding="15dp"
+                app:cardCornerRadius="25dp">
+
+                <TextView
+                    style="@style/MyCardViewText"
+                    android:text="@string/fragment02_11" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="15dp"
+                android:padding="15dp"
+                app:cardCornerRadius="25dp">
+
+                <TextView
+                    style="@style/MyCardViewText"
+                    android:text="@string/fragment02_12" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="15dp"
+                android:padding="15dp"
+                app:cardCornerRadius="25dp">
+
+                <TextView
+                    style="@style/MyCardViewText"
+                    android:text="@string/fragment02_13" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="15dp"
+                android:padding="15dp"
+                app:cardCornerRadius="25dp">
+
+                <TextView
+                    style="@style/MyCardViewText"
+                    android:text="@string/fragment02_14" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="15dp"
+                android:padding="15dp"
+                app:cardCornerRadius="25dp">
+
+                <TextView
+                    style="@style/MyCardViewText"
+                    android:text="@string/fragment02_15" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="15dp"
+                android:padding="15dp"
+                app:cardCornerRadius="25dp">
+
+                <TextView
+                    style="@style/MyCardViewText"
+                    android:text="@string/fragment02_16" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="15dp"
+                android:padding="15dp"
+                app:cardCornerRadius="25dp">
+
+                <TextView
+                    style="@style/MyCardViewText"
+                    android:text="@string/fragment02_17" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="15dp"
+                android:padding="15dp"
+                app:cardCornerRadius="25dp">
+
+                <TextView
+                    style="@style/MyCardViewText"
+                    android:text="@string/fragment02_18" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="15dp"
+                android:padding="15dp"
+                app:cardCornerRadius="25dp">
+
+                <TextView
+                    style="@style/MyCardViewText"
+                    android:text="@string/fragment02_19" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="15dp"
+                android:padding="15dp"
+                app:cardCornerRadius="25dp">
+
+                <TextView
+                    style="@style/MyCardViewText"
+                    android:text="@string/fragment02_20" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="15dp"
+                android:padding="15dp"
+                app:cardCornerRadius="25dp">
+
+                <TextView
+                    style="@style/MyCardViewText"
+                    android:text="@string/fragment02_21" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="15dp"
+                android:padding="15dp"
+                app:cardCornerRadius="25dp">
+
+                <TextView
+                    style="@style/MyCardViewText"
+                    android:text="@string/fragment02_22" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="15dp"
+                android:padding="15dp"
+                app:cardCornerRadius="25dp">
+
+                <TextView
+                    style="@style/MyCardViewText"
+                    android:text="@string/fragment02_23" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="15dp"
+                android:padding="15dp"
+                app:cardCornerRadius="25dp">
+
+                <TextView
+                    style="@style/MyCardViewText"
+                    android:text="@string/fragment02_24" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="15dp"
+                android:padding="15dp"
+                app:cardCornerRadius="25dp">
+
+                <TextView
+                    style="@style/MyCardViewText"
+                    android:text="@string/fragment02_25" />
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                style="@style/textViewStrip"
+                android:text="@string/strip" />
+
+    </LinearLayout>
+</ScrollView>
+
+
+    </RelativeLayout>

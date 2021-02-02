@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".lessons_java.LessonsTwoVariablesActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/bottomBar">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <TextView
+                    style="@style/textViewZagolovok"
+                    android:text="@string/lesson_three_type_data" />
+
+                <TextView
+                    style="@style/textView"
+                    android:text="@string/less_three_01" />
+
+                <TextView
+                    style="@style/textViewZagolovok"
+                    android:text="@string/primitive_type" />
+
+                <TextView
+                    style="@style/textView"
+                    android:text="@string/lessons03_03" />
+
+                <ImageView
+                    android:contentDescription="@string/less03_image01"
+                    android:id="@+id/less03_image01"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    style="@style/textView"
+                    android:text="@string/lessons03_04" />
+
+                <ImageView
+                    android:contentDescription="@string/less03_image02"
+                    android:id="@+id/less03_image02"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    style="@style/textView"
+                    android:text="@string/lessons03_05" />
+
+                <ImageView
+                    android:contentDescription="@string/less03_image03"
+                    android:id="@+id/less03_image03"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    style="@style/textView"
+                    android:text="@string/lessons03_06" />
+
+                <ImageView
+                    android:contentDescription="@string/less03_image04"
+                    android:id="@+id/less03_image04"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    style="@style/textView"
+                    android:text="@string/lessons03_07" />
+
+                <ImageView
+                    android:contentDescription="@string/less03_image05"
+                    android:id="@+id/less03_image05"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    style="@style/textView"
+                    android:text="@string/lessons03_08" />
+
+                <ImageView
+                    android:contentDescription="@string/less03_image06"
+                    android:id="@+id/less03_image06"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    style="@style/textView"
+                    android:text="@string/lessons03_09" />
+
+                <ImageView
+                    android:contentDescription="@string/less03_image07"
+                    android:id="@+id/less03_image07"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    style="@style/textView"
+                    android:text="@string/lessons03_10" />
+
+                <TextView
+                    style="@style/textView"
+                    android:text="@string/lessons03_11" />
+
+                <ImageView
+                    android:contentDescription="@string/less03_image08"
+                    android:id="@+id/less03_image08"
+                    android:layout_marginBottom="25dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+
+                <TextView
+                    style="@style/textViewZagolovok"
+                    android:text="@string/non_primitive_type" />
+
+                <TextView
+                    style="@style/textView"
+                    android:text="@string/lessons03_13" />
+
+                <ImageView
+                    android:contentDescription="@string/less03_image09"
+                    android:id="@+id/less03_image09"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    style="@style/textView"
+                    android:layout_marginBottom="25dp"
+                    android:text="@string/lessons03_14" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+
+                    <Button style="@style/button_style_previous" />
+                    <Button style="@style/button_style_lessons" />
+                    <Button style="@style/button_style_next"/>
+
+                </LinearLayout>
+
+                <TextView
+                    style="@style/textViewStrip"
+                    android:text="@string/strip" />
+
+            </LinearLayout>
+
+
+        </ScrollView>
+
+        <RelativeLayout
+            android:id="@+id/bottomBar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true">
+
+            <com.google.android.material.bottomnavigation.BottomNavigationView
+                android:id="@+id/bottomNavView_Bar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/white_grey_border_top"
+                app:menu="@menu/bottom_navigation_menu">
+
+
+            </com.google.android.material.bottomnavigation.BottomNavigationView>
+        </RelativeLayout>
+
+
+
+
+
+    </RelativeLayout>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

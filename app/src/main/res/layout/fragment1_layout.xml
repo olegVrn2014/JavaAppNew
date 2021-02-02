@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_gravity="center_horizontal"
+                android:scaleType="centerInside"
+                android:src="@drawable/java_logo"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorOrange"
+                android:text="@string/what_is_java"
+                android:textAlignment="center"
+                android:textColor="@color/colorWhite"
+                android:textSize="40sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_margin="10dp"
+                android:text="@string/frag_01_oracle"
+                android:textSize="20sp"
+                android:textColor="@color/colorBlack"
+                android:textStyle="italic"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorOrange"
+                android:text="@string/create_java"
+                android:textAlignment="center"
+                android:textColor="@color/colorWhite"
+                android:textSize="40sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_margin="10dp"
+                android:text="@string/frag_01_oracle02"
+                android:textSize="20sp"
+                android:textColor="@color/colorBlack"
+                android:textStyle="italic"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorOrange"
+                android:text="@string/application_java"
+                android:textAlignment="center"
+                android:textColor="@color/colorWhite"
+                android:textSize="40sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_margin="10dp"
+                android:text="@string/frag_01_oracle03"
+                android:textSize="20sp"
+                android:textColor="@color/colorBlack"
+                android:textStyle="italic"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorOrange"
+                android:text="@string/type_java_app"
+                android:textAlignment="center"
+                android:textColor="@color/colorWhite"
+                android:textSize="40sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_marginTop="15dp"
+                android:text="@string/frag_01_oracle04"
+                android:textColor="@color/colorBlack"
+                android:textSize="20sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorOrange"
+                android:text="@string/features_java"
+                android:textAlignment="center"
+                android:textColor="@color/colorWhite"
+                android:textSize="40sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_margin="10dp"
+                android:text="@string/frag_01_oracle05"
+                android:textSize="20sp"
+                android:textColor="@color/colorBlack"
+                android:textStyle="italic" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:src="@drawable/fr1_java"
+                android:layout_margin="10dp"
+                android:layout_gravity="center_horizontal"
+                android:scaleType="centerInside"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_margin="10dp"
+                android:text="@string/frag_01_oracle06"
+                android:textSize="20sp"
+                android:textColor="@color/colorBlack"
+                android:textStyle="italic"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:gravity="center_horizontal"
+                android:text="@string/strip"
+                android:textSize="30sp"
+                android:textColor="@color/colorOrange"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</RelativeLayout>

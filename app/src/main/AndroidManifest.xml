@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="ru.livemotivation.myapplication">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".lessons_collections.CollectionsTenActivity"></activity>
+        <activity android:name=".lessons_collections.CollectionsNineActivity" />
+        <activity android:name=".lessons_collections.CollectionsEightActivity" />
+        <activity android:name=".lessons_collections.CollectionsSevenActivity" />
+        <activity android:name=".lessons_collections.CollectionsSixActivity" />
+        <activity android:name=".lessons_collections.CollectionsFiveActivity" />
+        <activity android:name=".lessons_collections.CollectionsFourActivity" />
+        <activity android:name=".lessons_collections.CollectionsThreeActivity" />
+        <activity android:name=".lessons_exceptions.ExceptionsTwentyActivity" />
+        <activity android:name=".lessons_exceptions.ExceptionsNineteenActivity" />
+        <activity android:name=".lessons_exceptions.ExceptionsEighteenActivity" />
+        <activity android:name=".lessons_oop.OopSeventeenActivity" />
+        <activity android:name=".lessons_oop.OopSixteenActivity" />
+        <activity android:name=".lessons_oop.OopFifteenActivity" />
+        <activity android:name=".lessons_oop.OopFourteenActivity" />
+        <activity android:name=".lessons_oop.OopThirteenActivity" />
+        <activity android:name=".lessons_oop.OopTwelveActivity" />
+        <activity android:name=".lessons_oop.OopElevenActivity" />
+        <activity android:name=".lessons_oop.OopTenActivity" />
+        <activity android:name=".lessons_oop.OopNineActivity" />
+        <activity android:name=".lessons_oop.OopEightActivity" />
+        <activity android:name=".lessons_oop.OopSevenActivity" />
+        <activity android:name=".lessons_oop.OopSixActivity" />
+        <activity android:name=".lessons_oop.OopFiveActivity" />
+        <activity android:name=".lessons_oop.OopFourActivity" />
+        <activity android:name=".lessons_oop.OopThreeActivity" />
+        <activity android:name=".lessons_java.LessonsEighteenActivity" />
+        <activity android:name=".lessons_java.LessonsSeventeenActivity" />
+        <activity android:name=".lessons_java.LessonsSixteenActivity" />
+        <activity android:name=".lessons_java.LessonsFifteenActivity" />
+        <activity android:name=".lessons_java.LessonsFourteenActivity" />
+        <activity android:name=".lessons_java.LessonsThirteenActivity" />
+        <activity android:name=".lessons_java.LessonsTwelveActivity" />
+        <activity android:name=".lessons_java.LessonsElevenActivity" />
+        <activity android:name=".lessons_java.LessonsTenActivity" />
+        <activity android:name=".lessons_other.OtherTwoActivity" />
+        <activity android:name=".lessons_other.OtherOneActivity" />
+        <activity android:name=".lessons_collections.CollectionsTwoActivity" />
+        <activity android:name=".lessons_collections.CollectionsOneActivity" />
+        <activity android:name=".lessons_oop.OopTwoActivity" />
+        <activity android:name=".lessons_oop.OopOneActivity" />
+        <activity android:name=".lessons_java.LessonsNineActivity" />
+        <activity android:name=".lessons_java.LessonsEightActivity" />
+        <activity android:name=".lessons_java.LessonsSevenActivity" />
+        <activity android:name=".lessons_java.LessonsSixActivity" />
+        <activity android:name=".lessons_java.LessonsFiveAriphmeticsActivity" />
+        <activity android:name=".lessons_java.LessonsFourConsolActivity" />
+        <activity android:name=".lessons_java.LessonsThreeTypeActivity" />
+        <activity android:name=".lessons_java.LessonsTwoVariablesActivity" />
+        <activity android:name=".lessons_java.LessonsOneHelloWorldActivity" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ActivityOneLessonsTheme" />
+        <activity android:name=".ActivityTwoOop" />
+        <activity android:name=".ActivityThreeCollections" />
+        <activity android:name=".ActivityFourOther" />
+    </application>
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+</manifest>
