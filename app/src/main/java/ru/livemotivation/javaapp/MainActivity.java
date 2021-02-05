@@ -41,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
 //        tabLayout.getTabAt(2).setIcon(R.drawable.ic_library_books);
         Objects.requireNonNull(tabLayout.getTabAt(0)).setText(R.string.main);
         Objects.requireNonNull(tabLayout.getTabAt(1)).setText(R.string.explanations);
-        Objects.requireNonNull(tabLayout.getTabAt(2)).setText(R.string.frag3);
+        Objects.requireNonNull(tabLayout.getTabAt(2)).setText(R.string.books);
 
         BottomNavigationView bottomNavigationView = (BottomNavigationView) findViewById(R.id.bottomNavView_Bar);
         BottomNavigationViewHelper.disableShiftMode(bottomNavigationView);

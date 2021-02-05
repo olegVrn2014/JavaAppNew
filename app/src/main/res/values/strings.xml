@@ -4,11 +4,11 @@
     <string name="basics_bottom"><i>Основы</i></string>
     <string name="oop_bottom"><i>ООП</i></string>
     <string name="collections_bottom"><i>Коллекции</i></string>
-    <string name="other_bottom"><i>Другое</i></string>
+    <string name="settings"><i>Настройки</i></string>
     <string name="basics_java"><i>Основы JAVA</i></string>
     <string name="strip">Достигнут конец урока</string>
     <string name="explanations"><i>Пояснения</i></string>
-    <string name="frag3"><i>Установка</i></string>
+    <string name="books"><i>Книги</i></string>
     <string name="other_themes"><i>Прочие темы</i></string>
     <string name="collections"><i>Коллекции</i></string>
     <string name="previous_btn"><i>Предыдущий</i></string>
