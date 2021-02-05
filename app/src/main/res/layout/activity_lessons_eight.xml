@@ -6,7 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".lessons_java.LessonsEightActivity">
 
-
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -22,46 +21,39 @@
                 android:layout_marginBottom="25dp"
                 android:orientation="vertical">
 
-
-
                 <TextView
                     style="@style/textViewZagolovok"
                     android:text="@string/lessons08_01" />
-
-
 
                 <TextView
                     style="@style/textView"
                     android:text="@string/lessons08_02" />
 
-                <ImageView
-                    android:contentDescription="@string/less08_image01"
+                <com.zolad.zoominimageview.ZoomInImageView
                     android:id="@+id/less08_image01"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"/>
 
-                <ImageView
-                    android:contentDescription="@string/less08_image02"
+                <com.zolad.zoominimageview.ZoomInImageView
                     android:id="@+id/less08_image02"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"/>
-                <ImageView
-                    android:contentDescription="@string/less08_image03"
+
+                <com.zolad.zoominimageview.ZoomInImageView
                     android:id="@+id/less08_image03"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"/>
-                <ImageView
-                    android:contentDescription="@string/less08_image04"
+
+                <com.zolad.zoominimageview.ZoomInImageView
                     android:id="@+id/less08_image04"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"/>
-                <ImageView
-                    android:contentDescription="@string/less08_image05"
+
+                <com.zolad.zoominimageview.ZoomInImageView
                     android:id="@+id/less08_image05"
+                    android:layout_marginBottom="20dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"/>
-
-
 
                 <LinearLayout
                     android:layout_width="match_parent"

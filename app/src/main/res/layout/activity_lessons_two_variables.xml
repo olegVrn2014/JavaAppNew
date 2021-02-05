@@ -26,14 +26,13 @@
 
                 <TextView
                     style="@style/textViewZagolovok"
-                    android:text="@string/variables"/>
+                    android:text="@string/lessons02_12"/>
 
                 <TextView
                     style="@style/textView"
                     android:text="@string/lessons02_01"/>
 
-                <ImageView
-                    android:contentDescription="@string/less02_image01"
+                <com.zolad.zoominimageview.ZoomInImageView
                     android:id="@+id/less02_image01"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"/>
@@ -42,8 +41,7 @@
                     style="@style/textView"
                     android:text="@string/lessons02_02"/>
 
-                <ImageView
-                    android:contentDescription="@string/less02_image02"
+                <com.zolad.zoominimageview.ZoomInImageView
                     android:id="@+id/less02_image02"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"/>
@@ -52,8 +50,7 @@
                     style="@style/textView"
                     android:text="@string/lessons02_03"/>
 
-                <ImageView
-                    android:contentDescription="@string/less02_image03"
+                <com.zolad.zoominimageview.ZoomInImageView
                     android:id="@+id/less02_image03"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"/>
@@ -62,8 +59,7 @@
                     style="@style/textView"
                     android:text="@string/lessons02_04"/>
 
-                <ImageView
-                    android:contentDescription="@string/less02_image04"
+                <com.zolad.zoominimageview.ZoomInImageView
                     android:id="@+id/less02_image04"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"/>
@@ -72,8 +68,7 @@
                     style="@style/textView"
                     android:text="@string/lessons02_05"/>
 
-                <ImageView
-                    android:contentDescription="@string/less02_image05"
+                <com.zolad.zoominimageview.ZoomInImageView
                     android:id="@+id/less02_image05"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"/>
@@ -82,8 +77,7 @@
                     style="@style/textView"
                     android:text="@string/lessons02_06"/>
 
-                <ImageView
-                    android:contentDescription="@string/less02_image06"
+                <com.zolad.zoominimageview.ZoomInImageView
                     android:id="@+id/less02_image06"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"/>
@@ -92,23 +86,21 @@
                     style="@style/textView"
                     android:text="@string/lessons02_07"/>
 
-                <ImageView
-                    android:contentDescription="@string/less02_image07"
+                <com.zolad.zoominimageview.ZoomInImageView
                     android:id="@+id/less02_image07"
-                    android:layout_marginBottom="25dp"
+                    android:layout_marginBottom="20dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"/>
 
                 <TextView
                     style="@style/textViewZagolovok"
-                    android:text="@string/var"/>
+                    android:text="@string/lessons02_13"/>
 
                 <TextView
                     style="@style/textView"
                     android:text="@string/lessons02_08"/>
 
-                <ImageView
-                    android:contentDescription="@string/less02_image08"
+                <com.zolad.zoominimageview.ZoomInImageView
                     android:id="@+id/less02_image08"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"/>
@@ -118,23 +110,21 @@
                     android:layout_marginBottom="25dp"
                     android:text="@string/lessons02_09"/>
 
-                <ImageView
-                    android:contentDescription="@string/less02_image09"
+                <com.zolad.zoominimageview.ZoomInImageView
                     android:id="@+id/less02_image09"
-                    android:layout_marginBottom="25dp"
+                    android:layout_marginBottom="20dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"/>
 
                 <TextView
                     style="@style/textViewZagolovok"
-                    android:text="@string/constants"/>
+                    android:text="@string/lessons02_14"/>
 
                 <TextView
                     style="@style/textView"
                     android:text="@string/lessons02_10"/>
 
-                <ImageView
-                    android:contentDescription="@string/less02_image10"
+                <com.zolad.zoominimageview.ZoomInImageView
                     android:id="@+id/less02_image10"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"/>

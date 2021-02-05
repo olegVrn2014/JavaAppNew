@@ -7,6 +7,8 @@ import android.view.MenuItem;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.tabs.TabLayout;
 
+import java.util.Objects;
+
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager.widget.ViewPager;
@@ -34,9 +36,12 @@ public class MainActivity extends AppCompatActivity {
         tabLayout.setupWithViewPager(mViewPager);
 
 
-        tabLayout.getTabAt(0).setIcon(R.drawable.ic_home_black_24dp);
-        tabLayout.getTabAt(1).setIcon(R.drawable.ic_assignment);
-       // tabLayout.getTabAt(2).setIcon(R.drawable.ic_library_books);
+//        tabLayout.getTabAt(0).setIcon(R.drawable.ic_home_black_24dp);
+//        tabLayout.getTabAt(1).setIcon(R.drawable.ic_assignment);
+//        tabLayout.getTabAt(2).setIcon(R.drawable.ic_library_books);
+        Objects.requireNonNull(tabLayout.getTabAt(0)).setText(R.string.main);
+        Objects.requireNonNull(tabLayout.getTabAt(1)).setText(R.string.explanations);
+        Objects.requireNonNull(tabLayout.getTabAt(2)).setText(R.string.frag3);
 
         BottomNavigationView bottomNavigationView = (BottomNavigationView) findViewById(R.id.bottomNavView_Bar);
         BottomNavigationViewHelper.disableShiftMode(bottomNavigationView);
@@ -88,7 +93,7 @@ public class MainActivity extends AppCompatActivity {
         SectionsPageAdapter adapter = new SectionsPageAdapter(getSupportFragmentManager());
         adapter.addFragment(new Tab1Fragment());
         adapter.addFragment(new Tab2Fragment());
-       // adapter.addFragment(new Tab3Fragment());
+        adapter.addFragment(new Tab3Fragment());
         viewPager.setAdapter(adapter);
     }
 

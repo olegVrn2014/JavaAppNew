@@ -32,8 +32,7 @@
                    style="@style/textView"
                     android:text="@string/lessons01_02"/>
 
-                <ImageView
-                    android:contentDescription="@string/less01_image01"
+                <com.zolad.zoominimageview.ZoomInImageView
                     android:id="@+id/less01_image01"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"/>
@@ -42,8 +41,8 @@
                     style="@style/textView"
                     android:text="@string/lessons01_03"/>
 
-                <ImageView
-                    android:contentDescription="@string/less01_image02"
+
+                <com.zolad.zoominimageview.ZoomInImageView
                     android:id="@+id/less01_image02"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"/>
@@ -60,8 +59,7 @@
                     style="@style/textView"
                     android:text="@string/lessons01_06"/>
 
-                <ImageView
-                    android:contentDescription="@string/less01_image03"
+                <com.zolad.zoominimageview.ZoomInImageView
                     android:id="@+id/less01_image03"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"/>
@@ -70,8 +68,7 @@
                     style="@style/textView"
                     android:text="@string/lessons01_07"/>
 
-                <ImageView
-                    android:contentDescription="@string/less01_image04"
+                <com.zolad.zoominimageview.ZoomInImageView
                     android:id="@+id/less01_image04"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"/>
@@ -88,14 +85,11 @@
                     style="@style/textView"
                     android:text="@string/lessons01_10"/>
 
-                <ImageView
-                    android:contentDescription="@string/less01_image05"
+                <com.zolad.zoominimageview.ZoomInImageView
                     android:id="@+id/less01_image05"
-                    android:layout_marginBottom="25dp"
                     android:layout_width="match_parent"
+                    android:layout_marginBottom="25dp"
                     android:layout_height="wrap_content"/>
-
-
 
                 <LinearLayout
                     android:layout_width="match_parent"

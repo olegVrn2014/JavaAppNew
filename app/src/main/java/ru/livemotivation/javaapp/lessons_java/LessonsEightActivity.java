@@ -9,6 +9,7 @@ import android.widget.ImageView;
 
 import com.bumptech.glide.Glide;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.zolad.zoominimageview.ZoomInImageView;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -27,27 +28,25 @@ public class LessonsEightActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_lessons_eight);
 
-        ImageView less08_image01 = findViewById(R.id.less08_image01);
+        ZoomInImageView less08_image01 = findViewById(R.id.less08_image01);
         String url = "https://firebasestorage.googleapis.com/v0/b/javaapp-497c0.appspot.com/o/less_08%2Fless08_image01.png?alt=media&token=880611b4-7fb0-44fb-bbfa-dc17a9d0799a";
         Glide.with(getApplicationContext()).load(url).into(less08_image01);
 
-        ImageView less08_image02 = findViewById(R.id.less08_image02);
+        ZoomInImageView less08_image02 = findViewById(R.id.less08_image02);
         String url2 = "https://firebasestorage.googleapis.com/v0/b/javaapp-497c0.appspot.com/o/less_08%2Fless08_image02.png?alt=media&token=5edbf70a-7336-411d-9e31-0347a3470699";
         Glide.with(getApplicationContext()).load(url2).into(less08_image02);
 
-        ImageView less08_image03 = findViewById(R.id.less08_image03);
+        ZoomInImageView less08_image03 = findViewById(R.id.less08_image03);
         String url3 = "https://firebasestorage.googleapis.com/v0/b/javaapp-497c0.appspot.com/o/less_08%2Fless08_image03.png?alt=media&token=7c85c02e-ac31-4920-bfc5-1c16b2e3c9da";
         Glide.with(getApplicationContext()).load(url3).into(less08_image03);
 
-        ImageView less08_image04 = findViewById(R.id.less08_image04);
+        ZoomInImageView less08_image04 = findViewById(R.id.less08_image04);
         String url4 = "https://firebasestorage.googleapis.com/v0/b/javaapp-497c0.appspot.com/o/less_08%2Fless08_image04.png?alt=media&token=e285295f-8da0-4f17-b846-e46d1e912037";
         Glide.with(getApplicationContext()).load(url4).into(less08_image04);
 
-        ImageView less08_image05 = findViewById(R.id.less08_image05);
+        ZoomInImageView less08_image05 = findViewById(R.id.less08_image05);
         String url5 = "https://firebasestorage.googleapis.com/v0/b/javaapp-497c0.appspot.com/o/less_08%2Fless08_image05.png?alt=media&token=253639f0-9334-46cd-8772-6450091d0cac";
         Glide.with(getApplicationContext()).load(url5).into(less08_image05);
-
-
 
         BottomNavigationView bottomNavigationView = (BottomNavigationView) findViewById(R.id.bottomNavView_Bar);
         BottomNavigationViewHelper.disableShiftMode(bottomNavigationView);
