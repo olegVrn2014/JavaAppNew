@@ -1,10 +1,13 @@
 package ru.livemotivation.javaapp.lessons_oop;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
@@ -22,11 +25,58 @@ import ru.livemotivation.javaapp.R;
 
 public class OopSixteenActivity extends AppCompatActivity {
 
+    private MediaPlayer mediaPlayerBtn;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_oop_sixteen);
 
+        mediaPlayerBtn = MediaPlayer.create(this,R.raw.sounds);
+        ZoomImage();
+
+        BottomNavigationView bottomNavigationView = (BottomNavigationView) findViewById(R.id.bottomNavView_Bar);
+        BottomNavigationViewHelper.disableShiftMode(bottomNavigationView);
+        Menu menu = bottomNavigationView.getMenu();
+        MenuItem menuItem = menu.getItem(2);
+        menuItem.setChecked(true);
+
+        bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
+            @SuppressLint("NonConstantResourceId")
+            @Override
+            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+                switch (item.getItemId()) {
+                    case R.id.ic_main:
+                        Intent intent = new Intent(OopSixteenActivity.this, MainActivity.class);
+                        startActivity(intent);
+                        break;
+
+                    case R.id.ic_basics:
+                        Intent intent2 = new Intent(OopSixteenActivity.this, ActivityOneLessonsTheme.class);
+                        startActivity(intent2);
+                        break;
+
+                    case R.id.ic_oop:
+                        Intent intent3 = new Intent(OopSixteenActivity.this, ActivityTwoOop.class);
+                        startActivity(intent3);
+                        break;
+
+                    case R.id.ic_collections:
+                        Intent intent4 = new Intent(OopSixteenActivity.this, ActivityThreeCollections.class);
+                        startActivity(intent4);
+                        break;
+
+                    case R.id.ic_other:
+                        Intent intent5 = new Intent(OopSixteenActivity.this, ActivityFourOther.class);
+                        startActivity(intent5);
+                        break;
+                }
+
+                return false;
+            }
+        });
+    }
+    public void ZoomImage () {
         ZoomInImageView lessOop16_image01 = findViewById(R.id.lessOop16_image01);
         String url = "https://firebasestorage.googleapis.com/v0/b/javaapp-497c0.appspot.com/o/OOP%2FlessOop16%2F1.png?alt=media&token=7751515e-7f62-457e-9a9f-dca854d9688e";
         Glide.with(getApplicationContext()).load(url).into(lessOop16_image01);
@@ -66,61 +116,25 @@ public class OopSixteenActivity extends AppCompatActivity {
         ZoomInImageView lessOop16_image10 = findViewById(R.id.lessOop16_image10);
         String url10 = "https://firebasestorage.googleapis.com/v0/b/javaapp-497c0.appspot.com/o/OOP%2FlessOop16%2F10.png?alt=media&token=b47c3af7-e2d4-45b0-8733-b8c4b9dfb786";
         Glide.with(getApplicationContext()).load(url10).into(lessOop16_image10);
-
-        BottomNavigationView bottomNavigationView = (BottomNavigationView) findViewById(R.id.bottomNavView_Bar);
-        BottomNavigationViewHelper.disableShiftMode(bottomNavigationView);
-        Menu menu = bottomNavigationView.getMenu();
-        MenuItem menuItem = menu.getItem(2);
-        menuItem.setChecked(true);
-
-        bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
-            @Override
-            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-                switch (item.getItemId()) {
-                    case R.id.ic_main:
-                        Intent intent = new Intent(OopSixteenActivity.this, MainActivity.class);
-                        startActivity(intent);
-                        break;
-
-                    case R.id.ic_basics:
-                        Intent intent2 = new Intent(OopSixteenActivity.this, ActivityOneLessonsTheme.class);
-                        startActivity(intent2);
-                        break;
-
-                    case R.id.ic_oop:
-                        Intent intent3 = new Intent(OopSixteenActivity.this, ActivityTwoOop.class);
-                        startActivity(intent3);
-                        break;
-
-                    case R.id.ic_collections:
-                        Intent intent4 = new Intent(OopSixteenActivity.this, ActivityThreeCollections.class);
-                        startActivity(intent4);
-                        break;
-
-                    case R.id.ic_other:
-                        Intent intent5 = new Intent(OopSixteenActivity.this, ActivityFourOther.class);
-                        startActivity(intent5);
-                        break;
-                }
-
-
-                return false;
-            }
-        });
     }
 
 
     public void onClickPrevious(View view) {
+        mediaPlayerBtn.start();
+        Toast.makeText(this, "Ограничение обобщений", Toast.LENGTH_SHORT).show();
         startActivity(new Intent(OopSixteenActivity.this, OopFifteenActivity.class));
     }
 
     public void onClickLessons(View view) {
+        mediaPlayerBtn.start();
+        Toast.makeText(this, "Основы ООП", Toast.LENGTH_SHORT).show();
         startActivity(new Intent(OopSixteenActivity.this, ActivityTwoOop.class));
     }
 
     public void onClickNext(View view) {
+        mediaPlayerBtn.start();
+        Toast.makeText(this, "Ссылочные типы и копирование объектов", Toast.LENGTH_SHORT).show();
         startActivity(new Intent(OopSixteenActivity.this, OopSeventeenActivity.class));
-
     }
 
 

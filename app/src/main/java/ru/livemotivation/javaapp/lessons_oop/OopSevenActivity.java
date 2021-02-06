@@ -1,10 +1,13 @@
 package ru.livemotivation.javaapp.lessons_oop;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
@@ -22,11 +25,59 @@ import ru.livemotivation.javaapp.R;
 
 public class OopSevenActivity extends AppCompatActivity {
 
+    private MediaPlayer mediaPlayerBtn;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_oop_seven);
 
+        mediaPlayerBtn = MediaPlayer.create(this,R.raw.sounds);
+        ZoomImage();
+
+        BottomNavigationView bottomNavigationView = (BottomNavigationView) findViewById(R.id.bottomNavView_Bar);
+        BottomNavigationViewHelper.disableShiftMode(bottomNavigationView);
+        Menu menu = bottomNavigationView.getMenu();
+        MenuItem menuItem = menu.getItem(2);
+        menuItem.setChecked(true);
+
+        bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
+            @SuppressLint("NonConstantResourceId")
+            @Override
+            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+                switch (item.getItemId()) {
+                    case R.id.ic_main:
+                        Intent intent = new Intent(OopSevenActivity.this, MainActivity.class);
+                        startActivity(intent);
+                        break;
+
+                    case R.id.ic_basics:
+                        Intent intent2 = new Intent(OopSevenActivity.this, ActivityOneLessonsTheme.class);
+                        startActivity(intent2);
+                        break;
+
+                    case R.id.ic_oop:
+                        Intent intent3 = new Intent(OopSevenActivity.this, ActivityTwoOop.class);
+                        startActivity(intent3);
+                        break;
+
+                    case R.id.ic_collections:
+                        Intent intent4 = new Intent(OopSevenActivity.this, ActivityThreeCollections.class);
+                        startActivity(intent4);
+                        break;
+
+                    case R.id.ic_other:
+                        Intent intent5 = new Intent(OopSevenActivity.this, ActivityFourOther.class);
+                        startActivity(intent5);
+                        break;
+                }
+
+                return false;
+            }
+        });
+    }
+
+    public void ZoomImage () {
         ZoomInImageView lessOop07_image01 = findViewById(R.id.lessOop07_image01);
         String url = "https://firebasestorage.googleapis.com/v0/b/javaapp-497c0.appspot.com/o/OOP%2FlessOop07%2F1.png?alt=media&token=241f5bae-8f21-4185-a594-2aec863fb5f5";
         Glide.with(getApplicationContext()).load(url).into(lessOop07_image01);
@@ -74,61 +125,24 @@ public class OopSevenActivity extends AppCompatActivity {
         ZoomInImageView lessOop07_image12 = findViewById(R.id.lessOop07_image12);
         String url12 = "https://firebasestorage.googleapis.com/v0/b/javaapp-497c0.appspot.com/o/OOP%2FlessOop07%2F12.png?alt=media&token=212ff1be-0e34-4203-887e-70383d87c548";
         Glide.with(getApplicationContext()).load(url12).into(lessOop07_image12);
-
-        BottomNavigationView bottomNavigationView = (BottomNavigationView) findViewById(R.id.bottomNavView_Bar);
-        BottomNavigationViewHelper.disableShiftMode(bottomNavigationView);
-        Menu menu = bottomNavigationView.getMenu();
-        MenuItem menuItem = menu.getItem(2);
-        menuItem.setChecked(true);
-
-        bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
-            @Override
-            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-                switch (item.getItemId()) {
-                    case R.id.ic_main:
-                        Intent intent = new Intent(OopSevenActivity.this, MainActivity.class);
-                        startActivity(intent);
-                        break;
-
-                    case R.id.ic_basics:
-                        Intent intent2 = new Intent(OopSevenActivity.this, ActivityOneLessonsTheme.class);
-                        startActivity(intent2);
-                        break;
-
-                    case R.id.ic_oop:
-                        Intent intent3 = new Intent(OopSevenActivity.this, ActivityTwoOop.class);
-                        startActivity(intent3);
-                        break;
-
-                    case R.id.ic_collections:
-                        Intent intent4 = new Intent(OopSevenActivity.this, ActivityThreeCollections.class);
-                        startActivity(intent4);
-                        break;
-
-                    case R.id.ic_other:
-                        Intent intent5 = new Intent(OopSevenActivity.this, ActivityFourOther.class);
-                        startActivity(intent5);
-                        break;
-                }
-
-
-                return false;
-            }
-        });
     }
 
-
     public void onClickPrevious(View view) {
+        mediaPlayerBtn.start();
+        Toast.makeText(this, "Внутренние и вложенные классы", Toast.LENGTH_SHORT).show();
         startActivity(new Intent(OopSevenActivity.this, OopSixActivity.class));
     }
 
     public void onClickLessons(View view) {
+        mediaPlayerBtn.start();
+        Toast.makeText(this, "Основы ООП", Toast.LENGTH_SHORT).show();
         startActivity(new Intent(OopSevenActivity.this, ActivityTwoOop.class));
     }
 
     public void onClickNext(View view) {
+        mediaPlayerBtn.start();
+        Toast.makeText(this, "Абстрактные классы", Toast.LENGTH_SHORT).show();
         startActivity(new Intent(OopSevenActivity.this, OopEightActivity.class));
-
     }
 
 

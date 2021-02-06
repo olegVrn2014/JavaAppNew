@@ -1,10 +1,13 @@
 package ru.livemotivation.javaapp.lessons_oop;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
@@ -22,23 +25,15 @@ import ru.livemotivation.javaapp.R;
 
 public class OopFiveActivity extends AppCompatActivity {
 
+    private MediaPlayer mediaPlayerBtn;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_oop_five);
 
-        ZoomInImageView lessOop05_image01 = findViewById(R.id.lessOop05_image01);
-        String url = "https://firebasestorage.googleapis.com/v0/b/javaapp-497c0.appspot.com/o/OOP%2FlessOop05%2FlessOOP5_image01.jpg?alt=media&token=abe0ba2a-5bc4-409a-9a09-45156e01d087";
-        Glide.with(getApplicationContext()).load(url).into(lessOop05_image01);
-
-        ZoomInImageView lessOop05_image02 = findViewById(R.id.lessOop05_image02);
-        String url2 = "https://firebasestorage.googleapis.com/v0/b/javaapp-497c0.appspot.com/o/OOP%2FlessOop05%2FlessOOP5_image02.jpg?alt=media&token=9d7db249-8c1d-4500-a845-2698a5e94a41";
-        Glide.with(getApplicationContext()).load(url2).into(lessOop05_image02);
-
-        ZoomInImageView lessOop05_image03 = findViewById(R.id.lessOop05_image03);
-        String url3 = "https://firebasestorage.googleapis.com/v0/b/javaapp-497c0.appspot.com/o/OOP%2FlessOop05%2FlessOOP5_image03.png?alt=media&token=bda6254a-3fec-435b-97bc-d166dc751d41";
-        Glide.with(getApplicationContext()).load(url3).into(lessOop05_image03);
-
+        mediaPlayerBtn = MediaPlayer.create(this,R.raw.sounds);
+        ZoomImage();
 
         BottomNavigationView bottomNavigationView = (BottomNavigationView) findViewById(R.id.bottomNavView_Bar);
         BottomNavigationViewHelper.disableShiftMode(bottomNavigationView);
@@ -47,6 +42,7 @@ public class OopFiveActivity extends AppCompatActivity {
         menuItem.setChecked(true);
 
         bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
+            @SuppressLint("NonConstantResourceId")
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                 switch (item.getItemId()) {
@@ -76,24 +72,40 @@ public class OopFiveActivity extends AppCompatActivity {
                         break;
                 }
 
-
                 return false;
             }
         });
     }
+    public void ZoomImage () {
+        ZoomInImageView lessOop05_image01 = findViewById(R.id.lessOop05_image01);
+        String url = "https://firebasestorage.googleapis.com/v0/b/javaapp-497c0.appspot.com/o/OOP%2FlessOop05%2FlessOOP5_image01.jpg?alt=media&token=abe0ba2a-5bc4-409a-9a09-45156e01d087";
+        Glide.with(getApplicationContext()).load(url).into(lessOop05_image01);
 
+        ZoomInImageView lessOop05_image02 = findViewById(R.id.lessOop05_image02);
+        String url2 = "https://firebasestorage.googleapis.com/v0/b/javaapp-497c0.appspot.com/o/OOP%2FlessOop05%2FlessOOP5_image02.jpg?alt=media&token=9d7db249-8c1d-4500-a845-2698a5e94a41";
+        Glide.with(getApplicationContext()).load(url2).into(lessOop05_image02);
+
+        ZoomInImageView lessOop05_image03 = findViewById(R.id.lessOop05_image03);
+        String url3 = "https://firebasestorage.googleapis.com/v0/b/javaapp-497c0.appspot.com/o/OOP%2FlessOop05%2FlessOOP5_image03.png?alt=media&token=bda6254a-3fec-435b-97bc-d166dc751d41";
+        Glide.with(getApplicationContext()).load(url3).into(lessOop05_image03);
+    }
 
     public void onClickPrevious(View view) {
+        mediaPlayerBtn.start();
+        Toast.makeText(this, "Статический модификатор", Toast.LENGTH_SHORT).show();
         startActivity(new Intent(OopFiveActivity.this, OopFourActivity.class));
     }
 
     public void onClickLessons(View view) {
+        mediaPlayerBtn.start();
+        Toast.makeText(this, "Основы ООП", Toast.LENGTH_SHORT).show();
         startActivity(new Intent(OopFiveActivity.this, ActivityTwoOop.class));
     }
 
     public void onClickNext(View view) {
+        mediaPlayerBtn.start();
+        Toast.makeText(this, "Внутренние и вложенные классы", Toast.LENGTH_SHORT).show();
         startActivity(new Intent(OopFiveActivity.this, OopSixActivity.class));
-
     }
 
 

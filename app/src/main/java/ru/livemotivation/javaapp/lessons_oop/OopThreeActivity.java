@@ -1,10 +1,13 @@
 package ru.livemotivation.javaapp.lessons_oop;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
@@ -22,20 +25,15 @@ import ru.livemotivation.javaapp.R;
 
 public class OopThreeActivity extends AppCompatActivity {
 
+    private MediaPlayer mediaPlayerBtn;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_oop_three);
 
-        ZoomInImageView lessOop03_image01 = findViewById(R.id.lessOop03_image01);
-        String url = "https://firebasestorage.googleapis.com/v0/b/javaapp-497c0.appspot.com/o/OOP%2FlessOop03%2F%D0%91%D0%B5%D0%B7%20%D0%B8%D0%BC%D0%B5%D0%BD%D0%B8.png?alt=media&token=05a737aa-230e-4ca3-ac81-11bceac54d9e";
-        Glide.with(getApplicationContext()).load(url).into(lessOop03_image01);
-
-        ZoomInImageView lessOop03_image02 = findViewById(R.id.lessOop03_image02);
-        String url2 = "https://firebasestorage.googleapis.com/v0/b/javaapp-497c0.appspot.com/o/OOP%2FlessOop03%2F%D0%91%D0%B5%D0%B7%20%D0%B8%D0%BC%D0%B5%D0%BD%D0%B82.png?alt=media&token=cc31cbbf-3638-4f0b-9106-57bbc133851a";
-        Glide.with(getApplicationContext()).load(url2).into(lessOop03_image02);
-
-
+        mediaPlayerBtn = MediaPlayer.create(this,R.raw.sounds);
+        ZoomImage();
 
         BottomNavigationView bottomNavigationView = (BottomNavigationView) findViewById(R.id.bottomNavView_Bar);
         BottomNavigationViewHelper.disableShiftMode(bottomNavigationView);
@@ -44,6 +42,7 @@ public class OopThreeActivity extends AppCompatActivity {
         menuItem.setChecked(true);
 
         bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
+            @SuppressLint("NonConstantResourceId")
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                 switch (item.getItemId()) {
@@ -73,22 +72,36 @@ public class OopThreeActivity extends AppCompatActivity {
                         break;
                 }
 
-
                 return false;
             }
         });
     }
+    public void ZoomImage () {
+        ZoomInImageView lessOop03_image01 = findViewById(R.id.lessOop03_image01);
+        String url = "https://firebasestorage.googleapis.com/v0/b/javaapp-497c0.appspot.com/o/OOP%2FlessOop03%2F%D0%91%D0%B5%D0%B7%20%D0%B8%D0%BC%D0%B5%D0%BD%D0%B8.png?alt=media&token=05a737aa-230e-4ca3-ac81-11bceac54d9e";
+        Glide.with(getApplicationContext()).load(url).into(lessOop03_image01);
+
+        ZoomInImageView lessOop03_image02 = findViewById(R.id.lessOop03_image02);
+        String url2 = "https://firebasestorage.googleapis.com/v0/b/javaapp-497c0.appspot.com/o/OOP%2FlessOop03%2F%D0%91%D0%B5%D0%B7%20%D0%B8%D0%BC%D0%B5%D0%BD%D0%B82.png?alt=media&token=cc31cbbf-3638-4f0b-9106-57bbc133851a";
+        Glide.with(getApplicationContext()).load(url2).into(lessOop03_image02);
+    }
 
 
     public void onClickPrevious(View view) {
+        mediaPlayerBtn.start();
+        Toast.makeText(this, "Пакеты", Toast.LENGTH_SHORT).show();
         startActivity(new Intent(OopThreeActivity.this, OopTwoActivity.class));
     }
 
     public void onClickLessons(View view) {
+        mediaPlayerBtn.start();
+        Toast.makeText(this, "Основы ООП", Toast.LENGTH_SHORT).show();
         startActivity(new Intent(OopThreeActivity.this, ActivityTwoOop.class));
     }
 
     public void onClickNext(View view) {
+        mediaPlayerBtn.start();
+        Toast.makeText(this, "Статический модификатор", Toast.LENGTH_SHORT).show();
           startActivity(new Intent(OopThreeActivity.this, OopFourActivity.class));
 
     }

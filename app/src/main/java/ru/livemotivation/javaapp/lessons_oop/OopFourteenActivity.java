@@ -1,10 +1,13 @@
 package ru.livemotivation.javaapp.lessons_oop;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
@@ -22,11 +25,59 @@ import ru.livemotivation.javaapp.R;
 
 public class OopFourteenActivity extends AppCompatActivity {
 
+    private MediaPlayer mediaPlayerBtn;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_oop_fourteen);
 
+        mediaPlayerBtn = MediaPlayer.create(this,R.raw.sounds);
+        ZoomImage();
+
+        BottomNavigationView bottomNavigationView = (BottomNavigationView) findViewById(R.id.bottomNavView_Bar);
+        BottomNavigationViewHelper.disableShiftMode(bottomNavigationView);
+        Menu menu = bottomNavigationView.getMenu();
+        MenuItem menuItem = menu.getItem(2);
+        menuItem.setChecked(true);
+
+        bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
+            @SuppressLint("NonConstantResourceId")
+            @Override
+            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+                switch (item.getItemId()) {
+                    case R.id.ic_main:
+                        Intent intent = new Intent(OopFourteenActivity.this, MainActivity.class);
+                        startActivity(intent);
+                        break;
+
+                    case R.id.ic_basics:
+                        Intent intent2 = new Intent(OopFourteenActivity.this, ActivityOneLessonsTheme.class);
+                        startActivity(intent2);
+                        break;
+
+                    case R.id.ic_oop:
+                        Intent intent3 = new Intent(OopFourteenActivity.this, ActivityTwoOop.class);
+                        startActivity(intent3);
+                        break;
+
+                    case R.id.ic_collections:
+                        Intent intent4 = new Intent(OopFourteenActivity.this, ActivityThreeCollections.class);
+                        startActivity(intent4);
+                        break;
+
+                    case R.id.ic_other:
+                        Intent intent5 = new Intent(OopFourteenActivity.this, ActivityFourOther.class);
+                        startActivity(intent5);
+                        break;
+                }
+
+                return false;
+            }
+        });
+    }
+
+    public void ZoomImage (){
         ZoomInImageView lessOop14_image01 = findViewById(R.id.lessOop14_image01);
         String url = "https://firebasestorage.googleapis.com/v0/b/javaapp-497c0.appspot.com/o/OOP%2FlessOop14%2F1.png?alt=media&token=12c6f49b-5517-4b9c-8183-6d471616fa79";
         Glide.with(getApplicationContext()).load(url).into(lessOop14_image01);
@@ -82,61 +133,24 @@ public class OopFourteenActivity extends AppCompatActivity {
         ZoomInImageView lessOop14_image14 = findViewById(R.id.lessOop14_image14);
         String url14 = "https://firebasestorage.googleapis.com/v0/b/javaapp-497c0.appspot.com/o/OOP%2FlessOop14%2F14.png?alt=media&token=06b0e65b-d45a-4c16-9e12-3aa8a99140e7";
         Glide.with(getApplicationContext()).load(url14).into(lessOop14_image14);
-        
-        BottomNavigationView bottomNavigationView = (BottomNavigationView) findViewById(R.id.bottomNavView_Bar);
-        BottomNavigationViewHelper.disableShiftMode(bottomNavigationView);
-        Menu menu = bottomNavigationView.getMenu();
-        MenuItem menuItem = menu.getItem(2);
-        menuItem.setChecked(true);
-
-        bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
-            @Override
-            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-                switch (item.getItemId()) {
-                    case R.id.ic_main:
-                        Intent intent = new Intent(OopFourteenActivity.this, MainActivity.class);
-                        startActivity(intent);
-                        break;
-
-                    case R.id.ic_basics:
-                        Intent intent2 = new Intent(OopFourteenActivity.this, ActivityOneLessonsTheme.class);
-                        startActivity(intent2);
-                        break;
-
-                    case R.id.ic_oop:
-                        Intent intent3 = new Intent(OopFourteenActivity.this, ActivityTwoOop.class);
-                        startActivity(intent3);
-                        break;
-
-                    case R.id.ic_collections:
-                        Intent intent4 = new Intent(OopFourteenActivity.this, ActivityThreeCollections.class);
-                        startActivity(intent4);
-                        break;
-
-                    case R.id.ic_other:
-                        Intent intent5 = new Intent(OopFourteenActivity.this, ActivityFourOther.class);
-                        startActivity(intent5);
-                        break;
-                }
-
-
-                return false;
-            }
-        });
     }
 
-
     public void onClickPrevious(View view) {
+        mediaPlayerBtn.start();
+        Toast.makeText(this, "Класс object и его методы", Toast.LENGTH_SHORT).show();
         startActivity(new Intent(OopFourteenActivity.this, OopThirteenActivity.class));
     }
 
     public void onClickLessons(View view) {
+        mediaPlayerBtn.start();
+        Toast.makeText(this, "Основы ООП", Toast.LENGTH_SHORT).show();
         startActivity(new Intent(OopFourteenActivity.this, ActivityTwoOop.class));
     }
 
     public void onClickNext(View view) {
+        mediaPlayerBtn.start();
+        Toast.makeText(this, "Ограничение обобщений", Toast.LENGTH_SHORT).show();
         startActivity(new Intent(OopFourteenActivity.this, OopFifteenActivity.class));
-
     }
 
 
