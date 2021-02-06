@@ -1,11 +1,14 @@
 package ru.livemotivation.javaapp.lessons_java;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
@@ -23,11 +26,60 @@ import ru.livemotivation.javaapp.R;
 
 public class LessonsFiveAriphmeticsActivity extends AppCompatActivity {
 
+    private MediaPlayer mediaPlayerBtn;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_lessons_five_ariphmetics);
 
+        mediaPlayerBtn = MediaPlayer.create(this,R.raw.sounds);
+        ZoomImage();
+
+        BottomNavigationView bottomNavigationView = (BottomNavigationView) findViewById(R.id.bottomNavView_Bar);
+        BottomNavigationViewHelper.disableShiftMode(bottomNavigationView);
+        Menu menu = bottomNavigationView.getMenu();
+        MenuItem menuItem = menu.getItem(1);
+        menuItem.setChecked(true);
+
+        bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
+            @SuppressLint("NonConstantResourceId")
+            @Override
+            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+                switch (item.getItemId()) {
+                    case R.id.ic_main:
+                        Intent intent = new Intent(LessonsFiveAriphmeticsActivity.this, MainActivity.class);
+                        startActivity(intent);
+                        break;
+
+                    case R.id.ic_basics:
+                        Intent intent2 = new Intent(LessonsFiveAriphmeticsActivity.this, ActivityOneLessonsTheme.class);
+                        startActivity(intent2);
+                        break;
+
+                    case R.id.ic_oop:
+                        Intent intent3 = new Intent(LessonsFiveAriphmeticsActivity.this, ActivityTwoOop.class);
+                        startActivity(intent3);
+                        break;
+
+                    case R.id.ic_collections:
+                        Intent intent4 = new Intent(LessonsFiveAriphmeticsActivity.this, ActivityThreeCollections.class);
+                        startActivity(intent4);
+                        break;
+
+                    case R.id.ic_other:
+                        Intent intent5 = new Intent(LessonsFiveAriphmeticsActivity.this, ActivityFourOther.class);
+                        startActivity(intent5);
+                        break;
+                }
+
+
+                return false;
+            }
+        });
+    }
+
+    public void ZoomImage (){
         ZoomInImageView less05_image01 = findViewById(R.id.less05_image01);
         String url = "https://firebasestorage.googleapis.com/v0/b/javaapp-497c0.appspot.com/o/less_05%2Fless05_image01.png?alt=media&token=42a940ec-6985-4ba3-91f4-d73a03fdc070";
         Glide.with(getApplicationContext()).load(url).into(less05_image01);
@@ -87,59 +139,24 @@ public class LessonsFiveAriphmeticsActivity extends AppCompatActivity {
         ZoomInImageView less05_image15 = findViewById(R.id.less05_image15);
         String url15 = "https://firebasestorage.googleapis.com/v0/b/javaapp-497c0.appspot.com/o/less_05%2Fless05_image15.png?alt=media&token=5cf822e2-a567-4407-9c54-61d98ec375ba";
         Glide.with(getApplicationContext()).load(url15).into(less05_image15);
-
-        BottomNavigationView bottomNavigationView = (BottomNavigationView) findViewById(R.id.bottomNavView_Bar);
-        BottomNavigationViewHelper.disableShiftMode(bottomNavigationView);
-        Menu menu = bottomNavigationView.getMenu();
-        MenuItem menuItem = menu.getItem(1);
-        menuItem.setChecked(true);
-
-        bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
-            @Override
-            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-                switch (item.getItemId()) {
-                    case R.id.ic_main:
-                        Intent intent = new Intent(LessonsFiveAriphmeticsActivity.this, MainActivity.class);
-                        startActivity(intent);
-                        break;
-
-                    case R.id.ic_basics:
-                        Intent intent2 = new Intent(LessonsFiveAriphmeticsActivity.this, ActivityOneLessonsTheme.class);
-                        startActivity(intent2);
-                        break;
-
-                    case R.id.ic_oop:
-                        Intent intent3 = new Intent(LessonsFiveAriphmeticsActivity.this, ActivityTwoOop.class);
-                        startActivity(intent3);
-                        break;
-
-                    case R.id.ic_collections:
-                        Intent intent4 = new Intent(LessonsFiveAriphmeticsActivity.this, ActivityThreeCollections.class);
-                        startActivity(intent4);
-                        break;
-
-                    case R.id.ic_other:
-                        Intent intent5 = new Intent(LessonsFiveAriphmeticsActivity.this, ActivityFourOther.class);
-                        startActivity(intent5);
-                        break;
-                }
-
-
-                return false;
-            }
-        });
     }
 
 
     public void onClickPrevious(View view) {
+        mediaPlayerBtn.start();
+        Toast.makeText(this, "Консольный ввод", Toast.LENGTH_SHORT).show();
         startActivity(new Intent(LessonsFiveAriphmeticsActivity.this,LessonsFourConsolActivity.class));
     }
 
     public void onClickLessons(View view) {
+        mediaPlayerBtn.start();
+        Toast.makeText(this, "Основы JAVA", Toast.LENGTH_SHORT).show();
         startActivity(new Intent(LessonsFiveAriphmeticsActivity.this, ActivityOneLessonsTheme.class));
     }
 
     public void onClickNext(View view) {
+        mediaPlayerBtn.start();
+        Toast.makeText(this, "Поразрядные операции", Toast.LENGTH_SHORT).show();
           startActivity(new Intent(LessonsFiveAriphmeticsActivity.this,LessonsSixActivity.class));
 
     }

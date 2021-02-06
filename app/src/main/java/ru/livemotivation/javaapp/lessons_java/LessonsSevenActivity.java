@@ -1,11 +1,14 @@
 package ru.livemotivation.javaapp.lessons_java;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
 import com.davemorrissey.labs.subscaleview.ImageSource;
@@ -25,37 +28,15 @@ import ru.livemotivation.javaapp.R;
 
 public class LessonsSevenActivity extends AppCompatActivity {
 
+    private MediaPlayer mediaPlayerBtn;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_lessons_seven);
 
-        ZoomInImageView less07_image01 = findViewById(R.id.less07_image01);
-        String url = "https://firebasestorage.googleapis.com/v0/b/javaapp-497c0.appspot.com/o/less_07%2Fless07_image01.png?alt=media&token=e169fc79-1624-4668-aac5-6e5135c28d47";
-        Glide.with(getApplicationContext()).load(url).into(less07_image01);
-
-        ZoomInImageView less07_image02 = findViewById(R.id.less07_image02);
-        String url2 = "https://firebasestorage.googleapis.com/v0/b/javaapp-497c0.appspot.com/o/less_07%2Fless07_image02.png?alt=media&token=166a29db-5736-4c7f-bd35-d0a839aebc87";
-        Glide.with(getApplicationContext()).load(url2).into(less07_image02);
-
-        ZoomInImageView less07_image03 = findViewById(R.id.less07_image03);
-        String url3 = "https://firebasestorage.googleapis.com/v0/b/javaapp-497c0.appspot.com/o/less_07%2Fless07_image03.png?alt=media&token=c81173f1-8a95-4510-9d04-95fd99b10ea2";
-        Glide.with(getApplicationContext()).load(url3).into(less07_image03);
-
-        ZoomInImageView less07_image04 = findViewById(R.id.less07_image04);
-        String url4 = "https://firebasestorage.googleapis.com/v0/b/javaapp-497c0.appspot.com/o/less_07%2Fless07_image04.png?alt=media&token=64a1e2b2-67df-4ed0-93f5-015772f7666c";
-        Glide.with(getApplicationContext()).load(url4).into(less07_image04);
-
-        ZoomInImageView less07_image05 = findViewById(R.id.less07_image05);
-        String url5 = "https://firebasestorage.googleapis.com/v0/b/javaapp-497c0.appspot.com/o/less_07%2Fless07_image05.png?alt=media&token=f093e22f-d267-493b-8fd5-e6a11de4eb18";
-        Glide.with(getApplicationContext()).load(url5).into(less07_image05);
-
-        ZoomInImageView less07_image06 = findViewById(R.id.less07_image06);
-        String url6 = "https://firebasestorage.googleapis.com/v0/b/javaapp-497c0.appspot.com/o/less_07%2Fless07_image06.png?alt=media&token=ec64f977-22e0-4126-8575-ac97ed867873";
-        Glide.with(getApplicationContext()).load(url6).into(less07_image06);
-
-        SubsamplingScaleImageView imageView = (SubsamplingScaleImageView)findViewById(R.id.less07_image07);
-        imageView.setImage(ImageSource.resource(R.drawable.less07_image07));
+        mediaPlayerBtn = MediaPlayer.create(this,R.raw.sounds);
+        ZoomImage();
 
         BottomNavigationView bottomNavigationView = (BottomNavigationView) findViewById(R.id.bottomNavView_Bar);
         BottomNavigationViewHelper.disableShiftMode(bottomNavigationView);
@@ -64,6 +45,7 @@ public class LessonsSevenActivity extends AppCompatActivity {
         menuItem.setChecked(true);
 
         bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
+            @SuppressLint("NonConstantResourceId")
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                 switch (item.getItemId()) {
@@ -99,16 +81,51 @@ public class LessonsSevenActivity extends AppCompatActivity {
         });
     }
 
+    public void ZoomImage (){
+        ZoomInImageView less07_image01 = findViewById(R.id.less07_image01);
+        String url = "https://firebasestorage.googleapis.com/v0/b/javaapp-497c0.appspot.com/o/less_07%2Fless07_image01.png?alt=media&token=e169fc79-1624-4668-aac5-6e5135c28d47";
+        Glide.with(getApplicationContext()).load(url).into(less07_image01);
+
+        ZoomInImageView less07_image02 = findViewById(R.id.less07_image02);
+        String url2 = "https://firebasestorage.googleapis.com/v0/b/javaapp-497c0.appspot.com/o/less_07%2Fless07_image02.png?alt=media&token=166a29db-5736-4c7f-bd35-d0a839aebc87";
+        Glide.with(getApplicationContext()).load(url2).into(less07_image02);
+
+        ZoomInImageView less07_image03 = findViewById(R.id.less07_image03);
+        String url3 = "https://firebasestorage.googleapis.com/v0/b/javaapp-497c0.appspot.com/o/less_07%2Fless07_image03.png?alt=media&token=c81173f1-8a95-4510-9d04-95fd99b10ea2";
+        Glide.with(getApplicationContext()).load(url3).into(less07_image03);
+
+        ZoomInImageView less07_image04 = findViewById(R.id.less07_image04);
+        String url4 = "https://firebasestorage.googleapis.com/v0/b/javaapp-497c0.appspot.com/o/less_07%2Fless07_image04.png?alt=media&token=64a1e2b2-67df-4ed0-93f5-015772f7666c";
+        Glide.with(getApplicationContext()).load(url4).into(less07_image04);
+
+        ZoomInImageView less07_image05 = findViewById(R.id.less07_image05);
+        String url5 = "https://firebasestorage.googleapis.com/v0/b/javaapp-497c0.appspot.com/o/less_07%2Fless07_image05.png?alt=media&token=f093e22f-d267-493b-8fd5-e6a11de4eb18";
+        Glide.with(getApplicationContext()).load(url5).into(less07_image05);
+
+        ZoomInImageView less07_image06 = findViewById(R.id.less07_image06);
+        String url6 = "https://firebasestorage.googleapis.com/v0/b/javaapp-497c0.appspot.com/o/less_07%2Fless07_image06.png?alt=media&token=ec64f977-22e0-4126-8575-ac97ed867873";
+        Glide.with(getApplicationContext()).load(url6).into(less07_image06);
+
+        SubsamplingScaleImageView imageView = (SubsamplingScaleImageView)findViewById(R.id.less07_image07);
+        imageView.setImage(ImageSource.resource(R.drawable.less07_image07));
+    }
+
 
     public void onClickPrevious(View view) {
+        mediaPlayerBtn.start();
+        Toast.makeText(this, "Поразрядные операции", Toast.LENGTH_SHORT).show();
         startActivity(new Intent(LessonsSevenActivity.this,LessonsSixActivity.class));
     }
 
     public void onClickLessons(View view) {
+        mediaPlayerBtn.start();
+        Toast.makeText(this, "Основы JAVA", Toast.LENGTH_SHORT).show();
         startActivity(new Intent(LessonsSevenActivity.this, ActivityOneLessonsTheme.class));
     }
 
     public void onClickNext(View view) {
+        mediaPlayerBtn.start();
+        Toast.makeText(this, "Операции присваивания", Toast.LENGTH_SHORT).show();
         startActivity(new Intent(LessonsSevenActivity.this,LessonsEightActivity.class));
 
     }

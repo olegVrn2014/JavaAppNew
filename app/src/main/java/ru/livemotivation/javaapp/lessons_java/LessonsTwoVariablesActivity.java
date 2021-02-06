@@ -1,11 +1,14 @@
 package ru.livemotivation.javaapp.lessons_java;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
@@ -23,14 +26,63 @@ import ru.livemotivation.javaapp.R;
 
 public class LessonsTwoVariablesActivity extends AppCompatActivity {
 
+    private MediaPlayer mediaPlayerBtn;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_lessons_two_variables);
 
+        mediaPlayerBtn = MediaPlayer.create(this,R.raw.sounds);
+        ZoomImage();
+
+        BottomNavigationView bottomNavigationView = (BottomNavigationView) findViewById(R.id.bottomNavView_Bar);
+        BottomNavigationViewHelper.disableShiftMode(bottomNavigationView);
+        Menu menu = bottomNavigationView.getMenu();
+        MenuItem menuItem = menu.getItem(1);
+        menuItem.setChecked(true);
+
+        bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
+            @SuppressLint("NonConstantResourceId")
+            @Override
+            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+                switch (item.getItemId()) {
+                    case R.id.ic_main:
+                        Intent intent = new Intent(LessonsTwoVariablesActivity.this, MainActivity.class);
+                        startActivity(intent);
+                        break;
+
+                    case R.id.ic_basics:
+                        Intent intent2 = new Intent(LessonsTwoVariablesActivity.this, ActivityOneLessonsTheme.class);
+                        startActivity(intent2);
+                        break;
+
+                    case R.id.ic_oop:
+                        Intent intent3 = new Intent(LessonsTwoVariablesActivity.this, ActivityTwoOop.class);
+                        startActivity(intent3);
+                        break;
+
+                    case R.id.ic_collections:
+                        Intent intent4 = new Intent(LessonsTwoVariablesActivity.this, ActivityThreeCollections.class);
+                        startActivity(intent4);
+                        break;
+
+                    case R.id.ic_other:
+                        Intent intent5 = new Intent(LessonsTwoVariablesActivity.this, ActivityFourOther.class);
+                        startActivity(intent5);
+                        break;
+                }
+
+
+                return false;
+            }
+        });
+    }
+
+    public void ZoomImage () {
         ZoomInImageView less02_image01 = findViewById(R.id.less02_image01);
-       String url = "https://firebasestorage.googleapis.com/v0/b/javaapp-497c0.appspot.com/o/less_02%2Fless02_image01.png?alt=media&token=4da4039b-ada6-4fc7-b803-a368832a3979";
-       Glide.with(getApplicationContext()).load(url).into(less02_image01);
+        String url = "https://firebasestorage.googleapis.com/v0/b/javaapp-497c0.appspot.com/o/less_02%2Fless02_image01.png?alt=media&token=4da4039b-ada6-4fc7-b803-a368832a3979";
+        Glide.with(getApplicationContext()).load(url).into(less02_image01);
 
         ZoomInImageView less02_image02 = findViewById(R.id.less02_image02);
         String url2 = "https://firebasestorage.googleapis.com/v0/b/javaapp-497c0.appspot.com/o/less_02%2Fless02_image02.png?alt=media&token=682da013-f6d3-4836-a322-8d01105ba0ef";
@@ -67,58 +119,23 @@ public class LessonsTwoVariablesActivity extends AppCompatActivity {
         ZoomInImageView less02_image10 = findViewById(R.id.less02_image10);
         String url10 = "https://firebasestorage.googleapis.com/v0/b/javaapp-497c0.appspot.com/o/less_02%2Fless02_image10.png?alt=media&token=a8172c12-61f5-4691-ad7d-0b296c319d04";
         Glide.with(getApplicationContext()).load(url10).into(less02_image10);
-
-        BottomNavigationView bottomNavigationView = (BottomNavigationView) findViewById(R.id.bottomNavView_Bar);
-        BottomNavigationViewHelper.disableShiftMode(bottomNavigationView);
-        Menu menu = bottomNavigationView.getMenu();
-        MenuItem menuItem = menu.getItem(1);
-        menuItem.setChecked(true);
-
-        bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
-            @Override
-            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-                switch (item.getItemId()) {
-                    case R.id.ic_main:
-                        Intent intent = new Intent(LessonsTwoVariablesActivity.this, MainActivity.class);
-                        startActivity(intent);
-                        break;
-
-                    case R.id.ic_basics:
-                        Intent intent2 = new Intent(LessonsTwoVariablesActivity.this, ActivityOneLessonsTheme.class);
-                        startActivity(intent2);
-                        break;
-
-                    case R.id.ic_oop:
-                        Intent intent3 = new Intent(LessonsTwoVariablesActivity.this, ActivityTwoOop.class);
-                        startActivity(intent3);
-                        break;
-
-                    case R.id.ic_collections:
-                        Intent intent4 = new Intent(LessonsTwoVariablesActivity.this, ActivityThreeCollections.class);
-                        startActivity(intent4);
-                        break;
-
-                    case R.id.ic_other:
-                        Intent intent5 = new Intent(LessonsTwoVariablesActivity.this, ActivityFourOther.class);
-                        startActivity(intent5);
-                        break;
-                }
-
-
-                return false;
-            }
-        });
     }
 
     public void onClickPrevious(View view) {
+        mediaPlayerBtn.start();
+        Toast.makeText(this, "Переменные и константы", Toast.LENGTH_SHORT).show();
         startActivity(new Intent(LessonsTwoVariablesActivity.this,LessonsOneHelloWorldActivity.class));
     }
 
     public void onClickLessons(View view) {
+        mediaPlayerBtn.start();
+        Toast.makeText(this, "Основы JAVA", Toast.LENGTH_SHORT).show();
          startActivity(new Intent(LessonsTwoVariablesActivity.this, ActivityOneLessonsTheme.class));
     }
 
     public void onClickNext(View view) {
+        mediaPlayerBtn.start();
+        Toast.makeText(this, "Типы данных", Toast.LENGTH_SHORT).show();
          startActivity(new Intent(LessonsTwoVariablesActivity.this,LessonsThreeTypeActivity.class));
 
     }
