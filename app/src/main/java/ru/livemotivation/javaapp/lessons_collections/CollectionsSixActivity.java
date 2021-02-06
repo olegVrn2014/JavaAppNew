@@ -1,10 +1,13 @@
 package ru.livemotivation.javaapp.lessons_collections;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
@@ -22,22 +25,15 @@ import ru.livemotivation.javaapp.R;
 
 public class CollectionsSixActivity extends AppCompatActivity {
 
+    private MediaPlayer mediaPlayerBtn;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_collections_six);
 
-        ZoomInImageView lessCollections06_image01 = findViewById(R.id.lessCollections06_image01);
-        String url = "https://firebasestorage.googleapis.com/v0/b/javaapp-497c0.appspot.com/o/collections%2FColl_less06%2F1.png?alt=media&token=de359b04-cbfa-48e4-b4d9-e5fa647a6196";
-        Glide.with(getApplicationContext()).load(url).into(lessCollections06_image01);
-
-        ZoomInImageView lessCollections06_image02 = findViewById(R.id.lessCollections06_image02);
-        String url2 = "https://firebasestorage.googleapis.com/v0/b/javaapp-497c0.appspot.com/o/collections%2FColl_less06%2F2.png?alt=media&token=52f6974b-5be9-4a7d-a5ab-13e705035731";
-        Glide.with(getApplicationContext()).load(url2).into(lessCollections06_image02);
-
-        ZoomInImageView lessCollections06_image03 = findViewById(R.id.lessCollections06_image03);
-        String url3 = "https://firebasestorage.googleapis.com/v0/b/javaapp-497c0.appspot.com/o/collections%2FColl_less06%2F3.png?alt=media&token=2e1ff655-1077-4308-a580-ec151df648bf";
-        Glide.with(getApplicationContext()).load(url3).into(lessCollections06_image03);
+        mediaPlayerBtn = MediaPlayer.create(this,R.raw.sounds);
+        ZoomImage();
 
         BottomNavigationView bottomNavigationView = (BottomNavigationView) findViewById(R.id.bottomNavView_Bar);
         BottomNavigationViewHelper.disableShiftMode(bottomNavigationView);
@@ -46,6 +42,7 @@ public class CollectionsSixActivity extends AppCompatActivity {
         menuItem.setChecked(true);
 
         bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
+            @SuppressLint("NonConstantResourceId")
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                 switch (item.getItemId()) {
@@ -75,24 +72,41 @@ public class CollectionsSixActivity extends AppCompatActivity {
                         break;
                 }
 
-
                 return false;
             }
         });
     }
+    public void ZoomImage (){
+        ZoomInImageView lessCollections06_image01 = findViewById(R.id.lessCollections06_image01);
+        String url = "https://firebasestorage.googleapis.com/v0/b/javaapp-497c0.appspot.com/o/collections%2FColl_less06%2F1.png?alt=media&token=de359b04-cbfa-48e4-b4d9-e5fa647a6196";
+        Glide.with(getApplicationContext()).load(url).into(lessCollections06_image01);
+
+        ZoomInImageView lessCollections06_image02 = findViewById(R.id.lessCollections06_image02);
+        String url2 = "https://firebasestorage.googleapis.com/v0/b/javaapp-497c0.appspot.com/o/collections%2FColl_less06%2F2.png?alt=media&token=52f6974b-5be9-4a7d-a5ab-13e705035731";
+        Glide.with(getApplicationContext()).load(url2).into(lessCollections06_image02);
+
+        ZoomInImageView lessCollections06_image03 = findViewById(R.id.lessCollections06_image03);
+        String url3 = "https://firebasestorage.googleapis.com/v0/b/javaapp-497c0.appspot.com/o/collections%2FColl_less06%2F3.png?alt=media&token=2e1ff655-1077-4308-a580-ec151df648bf";
+        Glide.with(getApplicationContext()).load(url3).into(lessCollections06_image03);
+    }
 
 
     public void onClickPrevious(View view) {
+        mediaPlayerBtn.start();
+        Toast.makeText(this, "Интерфейс Set и класс HashSet", Toast.LENGTH_SHORT).show();
         startActivity(new Intent(CollectionsSixActivity.this, CollectionsFiveActivity.class));
     }
 
     public void onClickLessons(View view) {
+        mediaPlayerBtn.start();
+        Toast.makeText(this, "Коллекции", Toast.LENGTH_SHORT).show();
         startActivity(new Intent(CollectionsSixActivity.this, ActivityThreeCollections.class));
     }
 
     public void onClickNext(View view) {
+        mediaPlayerBtn.start();
+        Toast.makeText(this, "Интерфейсы Comparable и Comparator", Toast.LENGTH_SHORT).show();
          startActivity(new Intent(CollectionsSixActivity.this, CollectionsSevenActivity.class));
-
     }
 
 

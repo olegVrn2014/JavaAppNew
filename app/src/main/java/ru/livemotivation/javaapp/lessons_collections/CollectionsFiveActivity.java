@@ -1,10 +1,13 @@
 package ru.livemotivation.javaapp.lessons_collections;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
@@ -22,14 +25,15 @@ import ru.livemotivation.javaapp.R;
 
 public class CollectionsFiveActivity extends AppCompatActivity {
 
+    private MediaPlayer mediaPlayerBtn;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_collections_five);
 
-        ZoomInImageView lessCollections05_image01 = findViewById(R.id.lessCollections05_image01);
-        String url = "https://firebasestorage.googleapis.com/v0/b/javaapp-497c0.appspot.com/o/collections%2FColl_less05%2F1.png?alt=media&token=befd90dc-bf45-417c-b8a4-6ae6230eee5c";
-        Glide.with(getApplicationContext()).load(url).into(lessCollections05_image01);
+        mediaPlayerBtn = MediaPlayer.create(this,R.raw.sounds);
+        ZoomImage();
 
         BottomNavigationView bottomNavigationView = (BottomNavigationView) findViewById(R.id.bottomNavView_Bar);
         BottomNavigationViewHelper.disableShiftMode(bottomNavigationView);
@@ -38,6 +42,7 @@ public class CollectionsFiveActivity extends AppCompatActivity {
         menuItem.setChecked(true);
 
         bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
+            @SuppressLint("NonConstantResourceId")
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                 switch (item.getItemId()) {
@@ -67,24 +72,33 @@ public class CollectionsFiveActivity extends AppCompatActivity {
                         break;
                 }
 
-
                 return false;
             }
         });
     }
 
+    public void ZoomImage (){
+        ZoomInImageView lessCollections05_image01 = findViewById(R.id.lessCollections05_image01);
+        String url = "https://firebasestorage.googleapis.com/v0/b/javaapp-497c0.appspot.com/o/collections%2FColl_less05%2F1.png?alt=media&token=befd90dc-bf45-417c-b8a4-6ae6230eee5c";
+        Glide.with(getApplicationContext()).load(url).into(lessCollections05_image01);
+    }
 
     public void onClickPrevious(View view) {
+        mediaPlayerBtn.start();
+        Toast.makeText(this, "Класс LinkedList", Toast.LENGTH_SHORT).show();
         startActivity(new Intent(CollectionsFiveActivity.this, CollectionsFourActivity.class));
     }
 
     public void onClickLessons(View view) {
+        mediaPlayerBtn.start();
+        Toast.makeText(this, "Коллекции", Toast.LENGTH_SHORT).show();
         startActivity(new Intent(CollectionsFiveActivity.this, ActivityThreeCollections.class));
     }
 
     public void onClickNext(View view) {
+        mediaPlayerBtn.start();
+        Toast.makeText(this, "SortedSet, NavigableSet, TreeSet", Toast.LENGTH_SHORT).show();
         startActivity(new Intent(CollectionsFiveActivity.this, CollectionsSixActivity.class));
-
     }
 
 
