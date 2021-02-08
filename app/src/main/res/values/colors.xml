@@ -6,6 +6,9 @@
     <color name="colorWhite">#fff</color>
     <color name="colorGrey">#c3c3c3 </color>
     <color name="colorOrange">#e18f3f</color>
+    <color name="colorGreen">#4CE821</color>
     <color name="colorBlack">#020100</color>
     <color name="colorBlack90">#90020100</color>
+    <color name="colorBlack99">#99020100</color>
+    <color name="colorBlack20">#20020100</color>
 </resources>

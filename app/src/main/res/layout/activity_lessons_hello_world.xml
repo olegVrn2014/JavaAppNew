@@ -29,8 +29,8 @@
                     android:text="@string/lessons01_01"/>
 
                 <TextView
-                   style="@style/textView"
-                    android:text="@string/lessons01_02"/>
+                    style="@style/textView"
+                    android:text="@string/lessons01_02" />
 
                 <com.zolad.zoominimageview.ZoomInImageView
                     android:id="@+id/less01_image01"

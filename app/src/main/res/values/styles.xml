@@ -13,8 +13,10 @@
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_margin">10dp</item>
+        <item name="android:gravity">fill</item>
         <item name="android:layout_marginTop">15dp</item>
         <item name="android:textSize">20sp</item>
+        <item name="fontFamily">@font/coda</item>
         <item name="android:textColor">@color/colorBlack</item>
         <item name="android:textStyle">italic</item>
     </style>
@@ -22,11 +24,13 @@
     <style name="textViewZagolovok">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:background">@color/colorOrange</item>
+        <item name="android:background">@drawable/style_btn3_press</item>
         <item name="android:textAlignment">center</item>
         <item name="android:textSize">40sp</item>
-        <item name="android:textColor">@color/colorWhite</item>
-        <item name="android:textStyle">bold</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:layout_margin">5dp</item>
+        <item name="android:textColor">@color/colorOrange</item>
+        <item name="android:textStyle">italic</item>
     </style>
 
     <style name="textViewStrip">
@@ -46,11 +50,13 @@
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_weight">1</item>
         <item name="android:textAlignment">center</item>
-        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:textColor">@color/colorOrange</item>
         <item name="android:textStyle">italic</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:layout_marginLeft">5dp</item>
         <item name="android:text">@string/previous_btn</item>
         <item name="android:onClick">onClickPrevious</item>
-        <item name="android:background">@drawable/buttons</item>
+        <item name="android:background">@drawable/style_btn3_press</item>
     </style>
 
     <style name="button_style_lessons">
@@ -59,23 +65,25 @@
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_weight">1</item>
         <item name="android:textAlignment">center</item>
-        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:textColor">@color/colorOrange</item>
         <item name="android:textStyle">italic</item>
         <item name="android:text">@string/lessons_btn</item>
         <item name="android:onClick">onClickLessons</item>
-        <item name="android:background">@drawable/buttons</item>
+        <item name="android:background">@drawable/style_btn3_press</item>
     </style>
 
     <style name="button_style_next">
         <item name="android:layout_width">0dp</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_weight">1</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_marginRight">5dp</item>
         <item name="android:textAlignment">center</item>
-        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:textColor">@color/colorOrange</item>
         <item name="android:textStyle">italic</item>
         <item name="android:text">@string/next_btn</item>
         <item name="android:onClick">onClickNext</item>
-        <item name="android:background">@drawable/buttons</item>
+        <item name="android:background">@drawable/style_btn3_press</item>
     </style>
 
     <style name="MyCardViewText" parent="Theme.AppCompat.Light">
