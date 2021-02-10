@@ -95,6 +95,128 @@ public class Tab3Fragment extends Fragment {
         String url12 = "https://firebasestorage.googleapis.com/v0/b/javaapp-497c0.appspot.com/o/books%2Fbook_12.jpg?alt=media&token=fd7d692c-e595-43dc-aefb-e604e21ef854";
         book12.setClipToOutline(true);
         Glide.with(getContext()).load(url12).into(book12);
+
+        ZoomInImageView book13 = view.findViewById(R.id.book13);
+        String url13 = "https://firebasestorage.googleapis.com/v0/b/javaapp-497c0.appspot.com/o/books%2Fbook_13.jpg?alt=media&token=391b9dc4-11db-445e-a9f1-a3c1496b6680";
+        book13.setClipToOutline(true);
+        Glide.with(getContext()).load(url13).into(book13);
+
+        ZoomInImageView book14 = view.findViewById(R.id.book14);
+        String url14 = "https://firebasestorage.googleapis.com/v0/b/javaapp-497c0.appspot.com/o/books%2Fbook_14.jpg?alt=media&token=30fb6594-8866-4c4c-885c-19a156764c55";
+        book14.setClipToOutline(true);
+        Glide.with(getContext()).load(url14).into(book14);
+
+        ZoomInImageView book15 = view.findViewById(R.id.book15);
+        String url15 = "https://firebasestorage.googleapis.com/v0/b/javaapp-497c0.appspot.com/o/books%2Fbook_15.jpg?alt=media&token=d6af7b9e-1d83-410f-b18e-143e0333cc51";
+        book15.setClipToOutline(true);
+        Glide.with(getContext()).load(url15).into(book15);
+
+        ZoomInImageView book16 = view.findViewById(R.id.book16);
+        String url16 = "https://firebasestorage.googleapis.com/v0/b/javaapp-497c0.appspot.com/o/books%2Fbook_16.jpg?alt=media&token=f292e9b7-c651-48fd-8450-e4221b4a27aa";
+        book16.setClipToOutline(true);
+        Glide.with(getContext()).load(url16).into(book16);
+
+        ZoomInImageView book17 = view.findViewById(R.id.book17);
+        String url17 = "https://firebasestorage.googleapis.com/v0/b/javaapp-497c0.appspot.com/o/books%2Fbook_17.jpg?alt=media&token=6b1d1504-4ec5-4967-a0bd-66ebe18c8dfe";
+        book17.setClipToOutline(true);
+        Glide.with(getContext()).load(url17).into(book17);
+
+        ZoomInImageView book18 = view.findViewById(R.id.book18);
+        String url18 = "https://firebasestorage.googleapis.com/v0/b/javaapp-497c0.appspot.com/o/books%2Fbook_18.jpg?alt=media&token=4c084bed-ecdd-4792-8b4d-bc7c59a44ac0";
+        book18.setClipToOutline(true);
+        Glide.with(getContext()).load(url18).into(book18);
+
+        ZoomInImageView book19 = view.findViewById(R.id.book19);
+        String url19 = "https://firebasestorage.googleapis.com/v0/b/javaapp-497c0.appspot.com/o/books%2Fbook_19.jpg?alt=media&token=f8f7220e-14be-4db6-82ac-239125fe09cf";
+        book19.setClipToOutline(true);
+        Glide.with(getContext()).load(url19).into(book19);
+
+        ZoomInImageView book20 = view.findViewById(R.id.book20);
+        String url20 = "https://firebasestorage.googleapis.com/v0/b/javaapp-497c0.appspot.com/o/books%2Fbook_20.jpg?alt=media&token=73d380db-54e1-4979-b359-3ebd5bf05b25";
+        book20.setClipToOutline(true);
+        Glide.with(getContext()).load(url20).into(book20);
+
+        ZoomInImageView book21 = view.findViewById(R.id.book21);
+        String url21 = "https://firebasestorage.googleapis.com/v0/b/javaapp-497c0.appspot.com/o/books%2Fbook_21.jpg?alt=media&token=e391a99f-e9c8-4dbd-8c76-0269f753132d";
+        book21.setClipToOutline(true);
+        Glide.with(getContext()).load(url21).into(book21);
+
+        ZoomInImageView book22 = view.findViewById(R.id.book22);
+        String url22 = "https://firebasestorage.googleapis.com/v0/b/javaapp-497c0.appspot.com/o/books%2Fbook_22.jpg?alt=media&token=ad75bcd4-c089-477b-b1ce-cb3f29347f49";
+        book22.setClipToOutline(true);
+        Glide.with(getContext()).load(url22).into(book22);
+
+        ZoomInImageView book23 = view.findViewById(R.id.book23);
+        String url23 = "https://firebasestorage.googleapis.com/v0/b/javaapp-497c0.appspot.com/o/books%2Fbook_23.jpg?alt=media&token=510eba04-31c5-43c8-ba22-6ee658a51054";
+        book23.setClipToOutline(true);
+        Glide.with(getContext()).load(url23).into(book23);
+
+        ZoomInImageView book24 = view.findViewById(R.id.book24);
+        String url24 = "https://firebasestorage.googleapis.com/v0/b/javaapp-497c0.appspot.com/o/books%2Fbook_24.jpg?alt=media&token=cf913d63-9eed-4e1b-881d-4e560bb77aa3";
+        book24.setClipToOutline(true);
+        Glide.with(getContext()).load(url24).into(book24);
+
+        ZoomInImageView book25 = view.findViewById(R.id.book25);
+        String url25 = "https://firebasestorage.googleapis.com/v0/b/javaapp-497c0.appspot.com/o/books%2Fbook_25.jpg?alt=media&token=bd0e76ec-9fd8-4be7-bc6e-cd682a5794b9";
+        book25.setClipToOutline(true);
+        Glide.with(getContext()).load(url25).into(book25);
+
+        ZoomInImageView book26 = view.findViewById(R.id.book26);
+        String url26 = "https://firebasestorage.googleapis.com/v0/b/javaapp-497c0.appspot.com/o/books%2Fbook_26.jpg?alt=media&token=5e55ca26-be8a-4c3c-bfe3-31409c8f3228";
+        book26.setClipToOutline(true);
+        Glide.with(getContext()).load(url26).into(book26);
+
+        ZoomInImageView book27 = view.findViewById(R.id.book27);
+        String url27 = "https://firebasestorage.googleapis.com/v0/b/javaapp-497c0.appspot.com/o/books%2Fbook_27.jpg?alt=media&token=03f68df4-4eab-4942-b068-5627770ca48f";
+        book27.setClipToOutline(true);
+        Glide.with(getContext()).load(url27).into(book27);
+
+        ZoomInImageView book28 = view.findViewById(R.id.book28);
+        String url28 = "https://firebasestorage.googleapis.com/v0/b/javaapp-497c0.appspot.com/o/books%2Fbook_28.jpg?alt=media&token=4f03eaed-702d-4764-808d-c65c5a5b199c";
+        book28.setClipToOutline(true);
+        Glide.with(getContext()).load(url28).into(book28);
+
+        ZoomInImageView book29 = view.findViewById(R.id.book29);
+        String url29 = "https://firebasestorage.googleapis.com/v0/b/javaapp-497c0.appspot.com/o/books%2Fbook_29.jpg?alt=media&token=53c5f3a2-638a-458d-a4b9-4ed1bc547d80";
+        book29.setClipToOutline(true);
+        Glide.with(getContext()).load(url29).into(book29);
+
+        ZoomInImageView book30 = view.findViewById(R.id.book30);
+        String url30 = "https://firebasestorage.googleapis.com/v0/b/javaapp-497c0.appspot.com/o/books%2Fbook_30.jpg?alt=media&token=e7cdc649-ed57-4cbd-a106-abf4fa81c177";
+        book30.setClipToOutline(true);
+        Glide.with(getContext()).load(url30).into(book30);
+
+        ZoomInImageView book31 = view.findViewById(R.id.book31);
+        String url31 = "https://firebasestorage.googleapis.com/v0/b/javaapp-497c0.appspot.com/o/books%2Fbook_31.jpg?alt=media&token=5247d968-064e-42b6-b44f-ca7def7c3f50";
+        book31.setClipToOutline(true);
+        Glide.with(getContext()).load(url31).into(book31);
+
+        ZoomInImageView book32 = view.findViewById(R.id.book32);
+        String url32 = "https://firebasestorage.googleapis.com/v0/b/javaapp-497c0.appspot.com/o/books%2Fbook_32.jpg?alt=media&token=133affbf-7b5f-4b73-98d9-7bea4e17f0e9";
+        book32.setClipToOutline(true);
+        Glide.with(getContext()).load(url32).into(book32);
+
+        ZoomInImageView book33 = view.findViewById(R.id.book33);
+        String url33 = "https://firebasestorage.googleapis.com/v0/b/javaapp-497c0.appspot.com/o/books%2Fbook_33.jpg?alt=media&token=00b7d165-4668-48b8-9901-0cc2fa5daa8c";
+        book33.setClipToOutline(true);
+        Glide.with(getContext()).load(url33).into(book33);
+
+        ZoomInImageView book34 = view.findViewById(R.id.book34);
+        String url34 = "https://firebasestorage.googleapis.com/v0/b/javaapp-497c0.appspot.com/o/books%2Fbook_34.jpg?alt=media&token=1dc336b3-16d2-41b8-bc1b-e505474f3d5f";
+        book34.setClipToOutline(true);
+        Glide.with(getContext()).load(url34).into(book34);
+
+        ZoomInImageView book35 = view.findViewById(R.id.book35);
+        book35.setVisibility(View.INVISIBLE);
+        String url35 = "";
+        book35.setClipToOutline(true);
+        Glide.with(getContext()).load(url35).into(book35);
+
+        ZoomInImageView book36 = view.findViewById(R.id.book36);
+        book36.setVisibility(View.INVISIBLE);
+        String url36 = "";
+        book36.setClipToOutline(true);
+        Glide.with(getContext()).load(url36).into(book36);
     }
 
     public void onClickImage(View view){
@@ -217,6 +339,225 @@ public class Tab3Fragment extends Fragment {
             }
         });
 
+        ZoomInImageView book13 = view.findViewById(R.id.book13);
+        book13.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(getContext(), "Книга 13", Toast.LENGTH_SHORT).show();
+                //    Intent intent = new Intent(getContext(), OtherTwoActivity.class);
+                //   startActivity(intent);
+            }
+        });
+
+        ZoomInImageView book14 = view.findViewById(R.id.book14);
+        book14.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(getContext(), "Книга 14", Toast.LENGTH_SHORT).show();
+                //    Intent intent = new Intent(getContext(), OtherTwoActivity.class);
+                //   startActivity(intent);
+            }
+        });
+
+        ZoomInImageView book15 = view.findViewById(R.id.book15);
+        book15.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(getContext(), "Книга 15", Toast.LENGTH_SHORT).show();
+                //    Intent intent = new Intent(getContext(), OtherTwoActivity.class);
+                //   startActivity(intent);
+            }
+        });
+
+        ZoomInImageView book16 = view.findViewById(R.id.book16);
+        book16.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(getContext(), "Книга 16", Toast.LENGTH_SHORT).show();
+                //    Intent intent = new Intent(getContext(), OtherTwoActivity.class);
+                //   startActivity(intent);
+            }
+        });
+
+        ZoomInImageView book17 = view.findViewById(R.id.book17);
+        book17.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(getContext(), "Книга 17", Toast.LENGTH_SHORT).show();
+                //    Intent intent = new Intent(getContext(), OtherTwoActivity.class);
+                //   startActivity(intent);
+            }
+        });
+
+        ZoomInImageView book18 = view.findViewById(R.id.book18);
+        book18.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(getContext(), "Книга 18", Toast.LENGTH_SHORT).show();
+                //    Intent intent = new Intent(getContext(), OtherTwoActivity.class);
+                //   startActivity(intent);
+            }
+        });
+
+        ZoomInImageView book19 = view.findViewById(R.id.book19);
+        book19.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(getContext(), "Книга 19", Toast.LENGTH_SHORT).show();
+                //    Intent intent = new Intent(getContext(), OtherTwoActivity.class);
+                //   startActivity(intent);
+            }
+        });
+
+        ZoomInImageView book20 = view.findViewById(R.id.book20);
+        book20.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(getContext(), "Книга 20", Toast.LENGTH_SHORT).show();
+                //    Intent intent = new Intent(getContext(), OtherTwoActivity.class);
+                //   startActivity(intent);
+            }
+        });
+
+        ZoomInImageView book21 = view.findViewById(R.id.book21);
+        book21.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(getContext(), "Книга 21", Toast.LENGTH_SHORT).show();
+                //    Intent intent = new Intent(getContext(), OtherTwoActivity.class);
+                //   startActivity(intent);
+            }
+        });
+
+        ZoomInImageView book22 = view.findViewById(R.id.book22);
+        book22.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(getContext(), "Книга 22", Toast.LENGTH_SHORT).show();
+                //    Intent intent = new Intent(getContext(), OtherTwoActivity.class);
+                //   startActivity(intent);
+            }
+        });
+
+        ZoomInImageView book23 = view.findViewById(R.id.book23);
+        book23.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(getContext(), "Книга 23", Toast.LENGTH_SHORT).show();
+                //    Intent intent = new Intent(getContext(), OtherTwoActivity.class);
+                //   startActivity(intent);
+            }
+        });
+
+        ZoomInImageView book24 = view.findViewById(R.id.book24);
+        book24.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(getContext(), "Книга 24", Toast.LENGTH_SHORT).show();
+                //    Intent intent = new Intent(getContext(), OtherTwoActivity.class);
+                //   startActivity(intent);
+            }
+        });
+
+        ZoomInImageView book25 = view.findViewById(R.id.book25);
+        book25.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(getContext(), "Книга 25", Toast.LENGTH_SHORT).show();
+                //    Intent intent = new Intent(getContext(), OtherTwoActivity.class);
+                //   startActivity(intent);
+            }
+        });
+
+        ZoomInImageView book26 = view.findViewById(R.id.book26);
+        book26.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(getContext(), "Книга 26", Toast.LENGTH_SHORT).show();
+                //    Intent intent = new Intent(getContext(), OtherTwoActivity.class);
+                //   startActivity(intent);
+            }
+        });
+
+        ZoomInImageView book27 = view.findViewById(R.id.book27);
+        book27.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(getContext(), "Книга 27", Toast.LENGTH_SHORT).show();
+                //    Intent intent = new Intent(getContext(), OtherTwoActivity.class);
+                //   startActivity(intent);
+            }
+        });
+
+        ZoomInImageView book28 = view.findViewById(R.id.book28);
+        book28.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(getContext(), "Книга 28", Toast.LENGTH_SHORT).show();
+                //    Intent intent = new Intent(getContext(), OtherTwoActivity.class);
+                //   startActivity(intent);
+            }
+        });
+
+        ZoomInImageView book29 = view.findViewById(R.id.book29);
+        book29.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(getContext(), "Книга 29", Toast.LENGTH_SHORT).show();
+                //    Intent intent = new Intent(getContext(), OtherTwoActivity.class);
+                //   startActivity(intent);
+            }
+        });
+
+        ZoomInImageView book30 = view.findViewById(R.id.book30);
+        book30.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(getContext(), "Книга 30", Toast.LENGTH_SHORT).show();
+                //    Intent intent = new Intent(getContext(), OtherTwoActivity.class);
+                //   startActivity(intent);
+            }
+        });
+
+        ZoomInImageView book31 = view.findViewById(R.id.book31);
+        book31.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(getContext(), "Книга 31", Toast.LENGTH_SHORT).show();
+                //    Intent intent = new Intent(getContext(), OtherTwoActivity.class);
+                //   startActivity(intent);
+            }
+        });
+
+        ZoomInImageView book32 = view.findViewById(R.id.book32);
+        book32.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(getContext(), "Книга 32", Toast.LENGTH_SHORT).show();
+                //    Intent intent = new Intent(getContext(), OtherTwoActivity.class);
+                //   startActivity(intent);
+            }
+        });
+
+        ZoomInImageView book33 = view.findViewById(R.id.book33);
+        book33.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(getContext(), "Книга 33", Toast.LENGTH_SHORT).show();
+                //    Intent intent = new Intent(getContext(), OtherTwoActivity.class);
+                //   startActivity(intent);
+            }
+        });
+
+        ZoomInImageView book34 = view.findViewById(R.id.book34);
+        book34.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(getContext(), "Книга 34", Toast.LENGTH_SHORT).show();
+                //    Intent intent = new Intent(getContext(), OtherTwoActivity.class);
+                //   startActivity(intent);
+            }
+        });
     }
 
 

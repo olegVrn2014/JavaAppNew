@@ -154,6 +154,254 @@
                         android:layout_height="wrap_content"/>
 
                 </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <com.zolad.zoominimageview.ZoomInImageView
+                        android:id="@+id/book13"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/style_zoom_image"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"/>
+
+                    <com.zolad.zoominimageview.ZoomInImageView
+                        android:id="@+id/book14"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/style_zoom_image"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"/>
+
+                    <com.zolad.zoominimageview.ZoomInImageView
+                        android:id="@+id/book15"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/style_zoom_image"
+                        android:layout_weight="1"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <com.zolad.zoominimageview.ZoomInImageView
+                        android:id="@+id/book16"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/style_zoom_image"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"/>
+
+                    <com.zolad.zoominimageview.ZoomInImageView
+                        android:id="@+id/book17"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/style_zoom_image"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"/>
+
+                    <com.zolad.zoominimageview.ZoomInImageView
+                        android:id="@+id/book18"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/style_zoom_image"
+                        android:layout_weight="1"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <com.zolad.zoominimageview.ZoomInImageView
+                        android:id="@+id/book19"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/style_zoom_image"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"/>
+
+                    <com.zolad.zoominimageview.ZoomInImageView
+                        android:id="@+id/book20"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/style_zoom_image"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"/>
+
+                    <com.zolad.zoominimageview.ZoomInImageView
+                        android:id="@+id/book21"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/style_zoom_image"
+                        android:layout_weight="1"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <com.zolad.zoominimageview.ZoomInImageView
+                        android:id="@+id/book22"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/style_zoom_image"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"/>
+
+                    <com.zolad.zoominimageview.ZoomInImageView
+                        android:id="@+id/book23"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/style_zoom_image"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"/>
+
+                    <com.zolad.zoominimageview.ZoomInImageView
+                        android:id="@+id/book24"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/style_zoom_image"
+                        android:layout_weight="1"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <com.zolad.zoominimageview.ZoomInImageView
+                        android:id="@+id/book25"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/style_zoom_image"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"/>
+
+                    <com.zolad.zoominimageview.ZoomInImageView
+                        android:id="@+id/book26"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/style_zoom_image"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"/>
+
+                    <com.zolad.zoominimageview.ZoomInImageView
+                        android:id="@+id/book27"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/style_zoom_image"
+                        android:layout_weight="1"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <com.zolad.zoominimageview.ZoomInImageView
+                        android:id="@+id/book28"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/style_zoom_image"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"/>
+
+                    <com.zolad.zoominimageview.ZoomInImageView
+                        android:id="@+id/book29"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/style_zoom_image"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"/>
+
+                    <com.zolad.zoominimageview.ZoomInImageView
+                        android:id="@+id/book30"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/style_zoom_image"
+                        android:layout_weight="1"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <com.zolad.zoominimageview.ZoomInImageView
+                        android:id="@+id/book31"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/style_zoom_image"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"/>
+
+                    <com.zolad.zoominimageview.ZoomInImageView
+                        android:id="@+id/book32"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/style_zoom_image"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"/>
+
+                    <com.zolad.zoominimageview.ZoomInImageView
+                        android:id="@+id/book33"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/style_zoom_image"
+                        android:layout_weight="1"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <com.zolad.zoominimageview.ZoomInImageView
+                    android:id="@+id/book34"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/style_zoom_image"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"/>
+
+                    <com.zolad.zoominimageview.ZoomInImageView
+                        android:id="@+id/book35"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/style_zoom_image"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"/>
+
+                    <com.zolad.zoominimageview.ZoomInImageView
+                        android:id="@+id/book36"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/style_zoom_image"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
 
                 <TextView
                     style="@style/textViewVersionName"
