@@ -49,4 +49,5 @@ dependencies {
     implementation 'com.zolad:zoominimageview:1.0.0'
 
 
+
 }

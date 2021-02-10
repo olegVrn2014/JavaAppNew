@@ -428,8 +428,8 @@
             </androidx.cardview.widget.CardView>
 
             <TextView
-                style="@style/textViewStrip"
-                android:text="@string/strip" />
+                style="@style/textViewVersionName"
+                android:text="@string/versionNameApp" />
 
     </LinearLayout>
 </ScrollView>

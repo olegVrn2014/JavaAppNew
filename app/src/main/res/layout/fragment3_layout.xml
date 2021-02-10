@@ -1,31 +1,171 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    tools:context=".MainActivity">
 
 
-    <ScrollView
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="0dp"
-        android:layout_marginTop="0dp"
-        android:layout_marginEnd="0dp"
-        android:layout_marginBottom="0dp">
+        android:layout_height="match_parent">
 
-        <LinearLayout
+        <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:layout_height="match_parent"
+            android:layout_above="@+id/bottomBar"
+            tools:ignore="UnknownIdInLayout">
 
-        </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/style_zoom_image"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/textViewZagolovok"
+                    android:text="@string/books"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <com.zolad.zoominimageview.ZoomInImageView
+                        android:id="@+id/book01"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/style_zoom_image"
+                        android:layout_weight="1"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"/>
+
+                    <com.zolad.zoominimageview.ZoomInImageView
+                        android:id="@+id/book02"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/style_zoom_image"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"/>
+
+                    <com.zolad.zoominimageview.ZoomInImageView
+                        android:id="@+id/book03"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/style_zoom_image"
+                        android:layout_weight="1"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <com.zolad.zoominimageview.ZoomInImageView
+                        android:id="@+id/book04"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/style_zoom_image"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"/>
+
+                    <com.zolad.zoominimageview.ZoomInImageView
+                        android:id="@+id/book05"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/style_zoom_image"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"/>
+
+                    <com.zolad.zoominimageview.ZoomInImageView
+                        android:id="@+id/book06"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/style_zoom_image"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <com.zolad.zoominimageview.ZoomInImageView
+                        android:id="@+id/book07"
+                        android:background="@drawable/style_zoom_image"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"/>
+
+                    <com.zolad.zoominimageview.ZoomInImageView
+                        android:id="@+id/book08"
+                        android:background="@drawable/style_zoom_image"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"/>
+
+                    <com.zolad.zoominimageview.ZoomInImageView
+                        android:id="@+id/book09"
+                        android:background="@drawable/style_zoom_image"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <com.zolad.zoominimageview.ZoomInImageView
+                        android:id="@+id/book10"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/style_zoom_image"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"/>
+
+                    <com.zolad.zoominimageview.ZoomInImageView
+                        android:id="@+id/book11"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/style_zoom_image"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"/>
+
+                    <com.zolad.zoominimageview.ZoomInImageView
+                        android:id="@+id/book12"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/style_zoom_image"
+                        android:layout_weight="1"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+                <TextView
+                    style="@style/textViewVersionName"
+                    android:text="@string/versionNameApp" />
+
+            </LinearLayout>
 
 
-    </ScrollView>
+        </ScrollView>
 
-</RelativeLayout>
+
+    </RelativeLayout>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

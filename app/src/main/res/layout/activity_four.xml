@@ -12,33 +12,119 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <LinearLayout
+        <ScrollView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_above="@+id/bottomBar"
+            android:layout_above="@+id/bottomBar">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:orientation="vertical">
 
+
+
             <TextView
+                style="@style/textViewZagolovok"
+                android:text="@string/settings"/>
+
+            <Switch
+                android:id="@+id/switch1"
                 android:layout_width="match_parent"
+                android:layout_marginTop="20dp"
+                android:textSize="24sp"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:textStyle="italic"
+                android:checked="true"
+                android:padding="5dp"
+                style="@style/button_style_settings"
                 android:layout_height="wrap_content"
-                android:background="@color/colorOrange"
-                android:text="@string/other_themes"
+                android:text="@string/full_screen"
                 android:textAlignment="center"
-                android:textColor="@color/colorWhite"
-                android:textSize="40sp"
-                android:textStyle="bold" />
+                tools:ignore="UseSwitchCompatOrMaterialXml" />
 
-
-            <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/recyclerViewOther"
+            <Switch
+                android:id="@+id/switch2"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:padding="4dp"
-                android:scrollbars="vertical"
-                android:background="@color/colorGrey"/>
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+                android:textSize="24sp"
+                android:textStyle="italic"
+                android:padding="5dp"
+                style="@style/button_style_settings"
+                android:layout_height="wrap_content"
+                android:text="@string/dark_theme"
+                android:textAlignment="center"
+                tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+
+            <Button
+                style="@style/button_style_settings"
+                android:paddingLeft="5dp"
+                android:textSize="20sp"
+                android:paddingRight="5dp"
+                android:textAllCaps="false"
+                android:layout_marginBottom="10dp"
+                android:text="@string/privacy_policy"/>
+
+            <Button
+                style="@style/button_style_settings"
+                android:paddingLeft="5dp"
+                android:textSize="20sp"
+                android:textAllCaps="false"
+                android:paddingRight="5dp"
+                android:layout_marginBottom="10dp"
+                android:text="@string/feedback"/>
+
+            <Button
+                style="@style/button_style_settings"
+                android:paddingLeft="5dp"
+                android:textSize="20sp"
+                android:textAllCaps="false"
+                android:paddingRight="5dp"
+                android:layout_marginBottom="10dp"
+                android:text="@string/share"/>
+
+            <Button
+                style="@style/button_style_settings"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:textAllCaps="false"
+                android:layout_marginBottom="10dp"
+                android:text="@string/About_the_app"/>
+
+            <Button
+                style="@style/button_style_settings"
+                android:paddingLeft="5dp"
+                android:textSize="20sp"
+                android:paddingRight="5dp"
+                android:textAllCaps="false"
+                android:layout_marginBottom="10dp"
+                android:text="@string/estimate"/>
+
+            <Button
+                style="@style/button_style_settings"
+                android:paddingLeft="5dp"
+                android:textSize="20sp"
+                android:textAllCaps="false"
+                android:paddingRight="5dp"
+                android:layout_marginBottom="10dp"
+                android:text="@string/exit"/>
+
 
 
         </LinearLayout>
+
+        </ScrollView>
+
+        <TextView
+            style="@style/textViewVersionName"
+            android:layout_above="@+id/bottomBar"
+            android:text="@string/versionNameApp" />
 
         <RelativeLayout
             android:id="@+id/bottomBar"

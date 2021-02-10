@@ -6,7 +6,7 @@
     <string name="collections_bottom"><i>Коллекции</i></string>
     <string name="settings"><i>Настройки</i></string>
     <string name="basics_java"><i>Основы JAVA</i></string>
-    <string name="strip">Java App: versionName "1.0"</string>
+    <string name="versionNameApp">Java App: versionName "1.0"</string>
     <string name="explanations"><i>Пояснения</i></string>
     <string name="books"><i>Книги</i></string>
     <string name="other_themes"><i>Прочие темы</i></string>
@@ -651,5 +651,14 @@
     <string name="lessonsCollections10_02">Одним из ключевых методов интерфейса <b>Collection</b> является метод <b>Iterator&#60;E&#62; iterator()</b>. \nОн возвращает итератор - то есть объект, реализующий интерфейс <b>Iterator</b>. \n\nИнтерфейс <b>Iterator</b> имеет следующее определение:</string>
     <string name="lessonsCollections10_03">Реализация интерфейса предполагает, что с помощью вызова метода <b>next()</b> можно получить следующий элемент. \nС помощью метода <b>hasNext()</b> можно узнать, есть ли следующий элемент, и не достигнут ли конец коллекции. \nИ если элементы еще имеются, то <b>hasNext()</b> вернет значение <b>true</b>. \n\nМетод <b>hasNext()</b> следует вызывать перед методом <b>next()</b>, так как при достижении конца коллекции метод <b>next()</b> выбрасывает исключение <b>NoSuchElementException</b>. \nИ метод <b>remove()</b> удаляет текущий элемент, который был получен последним вызовом <b>next()</b>. \n\nИспользуем итератор для перебора коллекции <b>ArrayList</b>:</string>
     <string name="lessonsCollections10_04">Интерфейс <b>Iterator</b> предоставляет ограниченный функционал. Гораздо больший набор методов предоставляет другой итератор - интерфейс <b>ListIterator</b>. \n\nДанный итератор используется классами, реализующими интерфейс <b>List</b>, то есть классами <b>LinkedList, ArrayList</b> и др.\n\nИнтерфейс <b>ListIterator</b> расширяет интерфейс <b>Iterator</b> и определяет ряд дополнительных методов: \n\n&#9654;<b>void add(E obj)</b>: вставляет объект <b>obj</b> перед элементом, который должен быть возвращен следующим вызовом <b>next()</b> \n\n&#9654;<b>boolean hasNext()</b>: возвращает <b>true</b>, если в коллекции имеется следующий элемент, иначе возвращает <b>false</b> \n\n&#9654;<b>boolean hasPrevious()</b>: возвращает <b>true</b>, если в коллекции имеется предыдущий элемент, иначе возвращает <b>false</b> \n\n&#9654;<b>E next()</b>: возвращает текущий элемент и переходит к следующему, если такого нет, то генерируется исключение <b>NoSuchElementException</b> \n\n&#9654;<b>E previous()</b>: возвращает текущий элемент и переходит к предыдущему, если такого нет, то генерируется исключение <b>NoSuchElementException</b> \n\n&#9654;<b>int nextIndex()</b>: возвращает индекс следующего элемента. \nЕсли такого нет, то возвращается размер списка \n\n&#9654;<b>int previousIndex()</b>: возвращает индекс предыдущего элемента. \nЕсли такого нет, то возвращается число <b>-1</b> \n\n&#9654;<b>void remove()</b>: удаляет текущий элемент из списка. \nТаким образом, этот метод должен быть вызван после методов <b>next()</b> или <b>previous()</b>, иначе будет сгенерировано исключение <b>IlligalStateException</b> \n\n&#9654;<b>void set(E obj)</b>: присваивает текущему элементу, выбранному вызовом методов <b>next()</b> или <b>previous()</b>, ссылку на объект <b>obj</b> \n\nИспользуем <b>ListIterator</b>:</string>
+
+    <string name="exit">Выход</string>
+    <string name="estimate">Оценить</string>
+    <string name="About_the_app">О приложении</string>
+    <string name="share">Поделиться</string>
+    <string name="feedback">Оставить отзыв</string>
+    <string name="privacy_policy">Политика конфиденциальности</string>
+    <string name="full_screen">Полноэкранный режим</string>
+    <string name="dark_theme">Тёмная тема</string>
 
 </resources>

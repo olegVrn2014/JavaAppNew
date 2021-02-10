@@ -28,6 +28,7 @@ public class LessonsOneHelloWorldActivity extends AppCompatActivity {
 
     private MediaPlayer mediaPlayerBtn;
 
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -100,7 +101,7 @@ public class LessonsOneHelloWorldActivity extends AppCompatActivity {
 
 
     public void onClickLessons(View view) {
-      mediaPlayerBtn.start();
+        mediaPlayerBtn.start();
         Toast.makeText(this, "Основы JAVA", Toast.LENGTH_SHORT).show();
         startActivity(new Intent(LessonsOneHelloWorldActivity.this, ActivityOneLessonsTheme.class));
     }
