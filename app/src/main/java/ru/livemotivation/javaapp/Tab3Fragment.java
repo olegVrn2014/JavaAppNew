@@ -6,7 +6,6 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageView;
 import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
@@ -15,8 +14,12 @@ import com.zolad.zoominimageview.ZoomInImageView;
 import androidx.annotation.Nullable;
 import androidx.annotation.RequiresApi;
 import androidx.fragment.app.Fragment;
-import ru.livemotivation.javaapp.lessons_other.OtherOneActivity;
-import ru.livemotivation.javaapp.lessons_other.OtherTwoActivity;
+import ru.livemotivation.javaapp.fragment03_books.BookFive;
+import ru.livemotivation.javaapp.fragment03_books.BookFour;
+import ru.livemotivation.javaapp.fragment03_books.BookOne;
+import ru.livemotivation.javaapp.fragment03_books.BookSix;
+import ru.livemotivation.javaapp.fragment03_books.BookThree;
+import ru.livemotivation.javaapp.fragment03_books.BookTwo;
 
 
 public class Tab3Fragment extends Fragment {
@@ -224,8 +227,7 @@ public class Tab3Fragment extends Fragment {
         book01.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getContext(), OtherOneActivity.class);
-                Toast.makeText(getContext(), "Книга 1", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(getContext(), BookOne.class);
                 startActivity(intent);
             }
         });
@@ -233,8 +235,7 @@ public class Tab3Fragment extends Fragment {
         book02.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getContext(), OtherTwoActivity.class);
-                Toast.makeText(getContext(), "Книга 2", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(getContext(), BookTwo.class);
                 startActivity(intent);
             }
         });
@@ -243,9 +244,8 @@ public class Tab3Fragment extends Fragment {
         book03.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(getContext(), "Книга 3", Toast.LENGTH_SHORT).show();
-                //    Intent intent = new Intent(getContext(), OtherTwoActivity.class);
-                //   startActivity(intent);
+                   Intent intent = new Intent(getContext(), BookThree.class);
+                   startActivity(intent);
             }
         });
 
@@ -253,9 +253,8 @@ public class Tab3Fragment extends Fragment {
         book04.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(getContext(), "Книга 4", Toast.LENGTH_SHORT).show();
-                //    Intent intent = new Intent(getContext(), OtherTwoActivity.class);
-                //   startActivity(intent);
+                    Intent intent = new Intent(getContext(), BookFour.class);
+                   startActivity(intent);
             }
         });
 
@@ -263,9 +262,8 @@ public class Tab3Fragment extends Fragment {
         book05.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(getContext(), "Книга 5", Toast.LENGTH_SHORT).show();
-                //    Intent intent = new Intent(getContext(), OtherTwoActivity.class);
-                //   startActivity(intent);
+                Intent intent = new Intent(getContext(), BookFive.class);
+                startActivity(intent);
             }
         });
 
@@ -273,9 +271,8 @@ public class Tab3Fragment extends Fragment {
         book06.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(getContext(), "Книга 6", Toast.LENGTH_SHORT).show();
-                //    Intent intent = new Intent(getContext(), OtherTwoActivity.class);
-                //   startActivity(intent);
+                Intent intent = new Intent(getContext(), BookSix.class);
+                startActivity(intent);
             }
         });
 
@@ -283,9 +280,8 @@ public class Tab3Fragment extends Fragment {
         book07.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(getContext(), "Книга 7", Toast.LENGTH_SHORT).show();
-                //    Intent intent = new Intent(getContext(), OtherTwoActivity.class);
-                //   startActivity(intent);
+//                Intent intent = new Intent(getContext(), BookFour.class);
+//                startActivity(intent);
             }
         });
 
@@ -293,9 +289,8 @@ public class Tab3Fragment extends Fragment {
         book08.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(getContext(), "Книга 8", Toast.LENGTH_SHORT).show();
-                //    Intent intent = new Intent(getContext(), OtherTwoActivity.class);
-                //   startActivity(intent);
+//                Intent intent = new Intent(getContext(), BookFour.class);
+//                startActivity(intent);
             }
         });
 
@@ -303,9 +298,8 @@ public class Tab3Fragment extends Fragment {
         book09.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(getContext(), "Книга 9", Toast.LENGTH_SHORT).show();
-                //    Intent intent = new Intent(getContext(), OtherTwoActivity.class);
-                //   startActivity(intent);
+//                Intent intent = new Intent(getContext(), BookFour.class);
+//                startActivity(intent);
             }
         });
 
@@ -313,9 +307,8 @@ public class Tab3Fragment extends Fragment {
         book10.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(getContext(), "Книга 10", Toast.LENGTH_SHORT).show();
-                //    Intent intent = new Intent(getContext(), OtherTwoActivity.class);
-                //   startActivity(intent);
+//                Intent intent = new Intent(getContext(), BookFour.class);
+//                startActivity(intent);
             }
         });
 
@@ -323,9 +316,8 @@ public class Tab3Fragment extends Fragment {
         book11.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(getContext(), "Книга 11", Toast.LENGTH_SHORT).show();
-                //    Intent intent = new Intent(getContext(), OtherTwoActivity.class);
-                //   startActivity(intent);
+//                Intent intent = new Intent(getContext(), BookFour.class);
+//                startActivity(intent);
             }
         });
 
@@ -333,9 +325,8 @@ public class Tab3Fragment extends Fragment {
         book12.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(getContext(), "Книга 12", Toast.LENGTH_SHORT).show();
-                //    Intent intent = new Intent(getContext(), OtherTwoActivity.class);
-                //   startActivity(intent);
+//                Intent intent = new Intent(getContext(), BookFour.class);
+//                startActivity(intent);
             }
         });
 
@@ -343,9 +334,8 @@ public class Tab3Fragment extends Fragment {
         book13.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(getContext(), "Книга 13", Toast.LENGTH_SHORT).show();
-                //    Intent intent = new Intent(getContext(), OtherTwoActivity.class);
-                //   startActivity(intent);
+//                Intent intent = new Intent(getContext(), BookFour.class);
+//                startActivity(intent);
             }
         });
 
@@ -353,9 +343,8 @@ public class Tab3Fragment extends Fragment {
         book14.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(getContext(), "Книга 14", Toast.LENGTH_SHORT).show();
-                //    Intent intent = new Intent(getContext(), OtherTwoActivity.class);
-                //   startActivity(intent);
+//                Intent intent = new Intent(getContext(), BookFour.class);
+//                startActivity(intent);
             }
         });
 
@@ -363,9 +352,8 @@ public class Tab3Fragment extends Fragment {
         book15.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(getContext(), "Книга 15", Toast.LENGTH_SHORT).show();
-                //    Intent intent = new Intent(getContext(), OtherTwoActivity.class);
-                //   startActivity(intent);
+//                Intent intent = new Intent(getContext(), BookFour.class);
+//                startActivity(intent);
             }
         });
 
@@ -373,9 +361,8 @@ public class Tab3Fragment extends Fragment {
         book16.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(getContext(), "Книга 16", Toast.LENGTH_SHORT).show();
-                //    Intent intent = new Intent(getContext(), OtherTwoActivity.class);
-                //   startActivity(intent);
+//                Intent intent = new Intent(getContext(), BookFour.class);
+//                startActivity(intent);
             }
         });
 
@@ -383,9 +370,8 @@ public class Tab3Fragment extends Fragment {
         book17.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(getContext(), "Книга 17", Toast.LENGTH_SHORT).show();
-                //    Intent intent = new Intent(getContext(), OtherTwoActivity.class);
-                //   startActivity(intent);
+//                Intent intent = new Intent(getContext(), BookFour.class);
+//                startActivity(intent);
             }
         });
 
@@ -393,9 +379,8 @@ public class Tab3Fragment extends Fragment {
         book18.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(getContext(), "Книга 18", Toast.LENGTH_SHORT).show();
-                //    Intent intent = new Intent(getContext(), OtherTwoActivity.class);
-                //   startActivity(intent);
+//                Intent intent = new Intent(getContext(), BookFour.class);
+//                startActivity(intent);
             }
         });
 
@@ -403,9 +388,8 @@ public class Tab3Fragment extends Fragment {
         book19.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(getContext(), "Книга 19", Toast.LENGTH_SHORT).show();
-                //    Intent intent = new Intent(getContext(), OtherTwoActivity.class);
-                //   startActivity(intent);
+//                Intent intent = new Intent(getContext(), BookFour.class);
+//                startActivity(intent);
             }
         });
 
@@ -413,9 +397,8 @@ public class Tab3Fragment extends Fragment {
         book20.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(getContext(), "Книга 20", Toast.LENGTH_SHORT).show();
-                //    Intent intent = new Intent(getContext(), OtherTwoActivity.class);
-                //   startActivity(intent);
+//                Intent intent = new Intent(getContext(), BookFour.class);
+//                startActivity(intent);
             }
         });
 
@@ -423,9 +406,8 @@ public class Tab3Fragment extends Fragment {
         book21.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(getContext(), "Книга 21", Toast.LENGTH_SHORT).show();
-                //    Intent intent = new Intent(getContext(), OtherTwoActivity.class);
-                //   startActivity(intent);
+//                Intent intent = new Intent(getContext(), BookFour.class);
+//                startActivity(intent);
             }
         });
 
@@ -433,9 +415,8 @@ public class Tab3Fragment extends Fragment {
         book22.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(getContext(), "Книга 22", Toast.LENGTH_SHORT).show();
-                //    Intent intent = new Intent(getContext(), OtherTwoActivity.class);
-                //   startActivity(intent);
+//                Intent intent = new Intent(getContext(), BookFour.class);
+//                startActivity(intent);
             }
         });
 
@@ -443,9 +424,8 @@ public class Tab3Fragment extends Fragment {
         book23.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(getContext(), "Книга 23", Toast.LENGTH_SHORT).show();
-                //    Intent intent = new Intent(getContext(), OtherTwoActivity.class);
-                //   startActivity(intent);
+//                Intent intent = new Intent(getContext(), BookFour.class);
+//                startActivity(intent);
             }
         });
 
@@ -453,9 +433,8 @@ public class Tab3Fragment extends Fragment {
         book24.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(getContext(), "Книга 24", Toast.LENGTH_SHORT).show();
-                //    Intent intent = new Intent(getContext(), OtherTwoActivity.class);
-                //   startActivity(intent);
+//                Intent intent = new Intent(getContext(), BookFour.class);
+//                startActivity(intent);
             }
         });
 
@@ -463,9 +442,8 @@ public class Tab3Fragment extends Fragment {
         book25.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(getContext(), "Книга 25", Toast.LENGTH_SHORT).show();
-                //    Intent intent = new Intent(getContext(), OtherTwoActivity.class);
-                //   startActivity(intent);
+//                Intent intent = new Intent(getContext(), BookFour.class);
+//                startActivity(intent);
             }
         });
 
@@ -473,9 +451,8 @@ public class Tab3Fragment extends Fragment {
         book26.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(getContext(), "Книга 26", Toast.LENGTH_SHORT).show();
-                //    Intent intent = new Intent(getContext(), OtherTwoActivity.class);
-                //   startActivity(intent);
+//                Intent intent = new Intent(getContext(), BookFour.class);
+//                startActivity(intent);
             }
         });
 
@@ -483,9 +460,8 @@ public class Tab3Fragment extends Fragment {
         book27.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(getContext(), "Книга 27", Toast.LENGTH_SHORT).show();
-                //    Intent intent = new Intent(getContext(), OtherTwoActivity.class);
-                //   startActivity(intent);
+//                Intent intent = new Intent(getContext(), BookFour.class);
+//                startActivity(intent);
             }
         });
 
@@ -493,9 +469,8 @@ public class Tab3Fragment extends Fragment {
         book28.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(getContext(), "Книга 28", Toast.LENGTH_SHORT).show();
-                //    Intent intent = new Intent(getContext(), OtherTwoActivity.class);
-                //   startActivity(intent);
+//                Intent intent = new Intent(getContext(), BookFour.class);
+//                startActivity(intent);
             }
         });
 
@@ -503,9 +478,8 @@ public class Tab3Fragment extends Fragment {
         book29.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(getContext(), "Книга 29", Toast.LENGTH_SHORT).show();
-                //    Intent intent = new Intent(getContext(), OtherTwoActivity.class);
-                //   startActivity(intent);
+//                Intent intent = new Intent(getContext(), BookFour.class);
+//                startActivity(intent);
             }
         });
 
@@ -513,9 +487,8 @@ public class Tab3Fragment extends Fragment {
         book30.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(getContext(), "Книга 30", Toast.LENGTH_SHORT).show();
-                //    Intent intent = new Intent(getContext(), OtherTwoActivity.class);
-                //   startActivity(intent);
+//                Intent intent = new Intent(getContext(), BookFour.class);
+//                startActivity(intent);
             }
         });
 
@@ -523,9 +496,8 @@ public class Tab3Fragment extends Fragment {
         book31.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(getContext(), "Книга 31", Toast.LENGTH_SHORT).show();
-                //    Intent intent = new Intent(getContext(), OtherTwoActivity.class);
-                //   startActivity(intent);
+//                Intent intent = new Intent(getContext(), BookFour.class);
+//                startActivity(intent);
             }
         });
 
@@ -533,9 +505,8 @@ public class Tab3Fragment extends Fragment {
         book32.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(getContext(), "Книга 32", Toast.LENGTH_SHORT).show();
-                //    Intent intent = new Intent(getContext(), OtherTwoActivity.class);
-                //   startActivity(intent);
+//                Intent intent = new Intent(getContext(), BookFour.class);
+//                startActivity(intent);
             }
         });
 
@@ -543,9 +514,8 @@ public class Tab3Fragment extends Fragment {
         book33.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(getContext(), "Книга 33", Toast.LENGTH_SHORT).show();
-                //    Intent intent = new Intent(getContext(), OtherTwoActivity.class);
-                //   startActivity(intent);
+//                Intent intent = new Intent(getContext(), BookFour.class);
+//                startActivity(intent);
             }
         });
 
@@ -553,9 +523,8 @@ public class Tab3Fragment extends Fragment {
         book34.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(getContext(), "Книга 34", Toast.LENGTH_SHORT).show();
-                //    Intent intent = new Intent(getContext(), OtherTwoActivity.class);
-                //   startActivity(intent);
+//                Intent intent = new Intent(getContext(), BookFour.class);
+//                startActivity(intent);
             }
         });
     }

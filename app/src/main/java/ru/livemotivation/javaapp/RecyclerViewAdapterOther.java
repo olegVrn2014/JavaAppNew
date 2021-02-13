@@ -12,8 +12,8 @@ import java.util.ArrayList;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
-import ru.livemotivation.javaapp.lessons_other.OtherOneActivity;
-import ru.livemotivation.javaapp.lessons_other.OtherTwoActivity;
+import ru.livemotivation.javaapp.fragment03_books.BookOne;
+import ru.livemotivation.javaapp.fragment03_books.BookTwo;
 
 public class RecyclerViewAdapterOther extends RecyclerView.Adapter<RecyclerViewAdapterOther.RececlerViewViewHolder> {
     private ArrayList<RecyclerViewItem> arrayList;
@@ -38,11 +38,11 @@ public class RecyclerViewAdapterOther extends RecyclerView.Adapter<RecyclerViewA
         public void onClick(View v) {
             switch (getAdapterPosition()){
                 case 0:
-                    Intent intent = new Intent(context, OtherOneActivity.class);
+                    Intent intent = new Intent(context, BookOne.class);
                     context.startActivity(intent);
                     break;
                 case 1:
-                    Intent intent1 = new Intent(context, OtherTwoActivity.class);
+                    Intent intent1 = new Intent(context, BookTwo.class);
                     context.startActivity(intent1);
                     break;
             }

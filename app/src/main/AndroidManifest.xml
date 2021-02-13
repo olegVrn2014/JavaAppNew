@@ -9,307 +9,379 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name="ru.livemotivation.javaapp.lessons_collections.CollectionsTenActivity"
+        <activity
+            android:name=".fragment03_books.BookSix"
             android:screenOrientation="portrait">
             <intent-filter>
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="ru.livemotivation.javaapp.lessons_collections.CollectionsNineActivity"
+        <activity
+            android:name=".fragment03_books.BookFive"
             android:screenOrientation="portrait">
             <intent-filter>
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="ru.livemotivation.javaapp.lessons_collections.CollectionsEightActivity"
+        <activity
+            android:name=".fragment03_books.BookFour"
             android:screenOrientation="portrait">
             <intent-filter>
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="ru.livemotivation.javaapp.lessons_collections.CollectionsSevenActivity"
+        <activity
+            android:name=".lessons_collections.CollectionsTenActivity"
             android:screenOrientation="portrait">
             <intent-filter>
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="ru.livemotivation.javaapp.lessons_collections.CollectionsSixActivity"
+        <activity
+            android:name=".lessons_collections.CollectionsNineActivity"
             android:screenOrientation="portrait">
             <intent-filter>
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="ru.livemotivation.javaapp.lessons_collections.CollectionsFiveActivity"
+        <activity
+            android:name=".lessons_collections.CollectionsEightActivity"
             android:screenOrientation="portrait">
             <intent-filter>
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="ru.livemotivation.javaapp.lessons_collections.CollectionsFourActivity"
+        <activity
+            android:name=".lessons_collections.CollectionsSevenActivity"
             android:screenOrientation="portrait">
             <intent-filter>
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="ru.livemotivation.javaapp.lessons_collections.CollectionsThreeActivity"
+        <activity
+            android:name=".lessons_collections.CollectionsSixActivity"
             android:screenOrientation="portrait">
             <intent-filter>
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="ru.livemotivation.javaapp.lessons_exceptions.ExceptionsTwentyActivity"
+        <activity
+            android:name=".lessons_collections.CollectionsFiveActivity"
             android:screenOrientation="portrait">
             <intent-filter>
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="ru.livemotivation.javaapp.lessons_exceptions.ExceptionsNineteenActivity"
+        <activity
+            android:name=".lessons_collections.CollectionsFourActivity"
             android:screenOrientation="portrait">
             <intent-filter>
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="ru.livemotivation.javaapp.lessons_exceptions.ExceptionsEighteenActivity"
+        <activity
+            android:name=".lessons_collections.CollectionsThreeActivity"
             android:screenOrientation="portrait">
             <intent-filter>
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="ru.livemotivation.javaapp.lessons_oop.OopSeventeenActivity"
+        <activity
+            android:name=".lessons_exceptions.ExceptionsTwentyActivity"
             android:screenOrientation="portrait">
             <intent-filter>
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="ru.livemotivation.javaapp.lessons_oop.OopSixteenActivity"
+        <activity
+            android:name=".lessons_exceptions.ExceptionsNineteenActivity"
             android:screenOrientation="portrait">
             <intent-filter>
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="ru.livemotivation.javaapp.lessons_oop.OopFifteenActivity"
+        <activity
+            android:name=".lessons_exceptions.ExceptionsEighteenActivity"
             android:screenOrientation="portrait">
             <intent-filter>
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="ru.livemotivation.javaapp.lessons_oop.OopFourteenActivity"
+        <activity
+            android:name=".lessons_oop.OopSeventeenActivity"
             android:screenOrientation="portrait">
             <intent-filter>
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="ru.livemotivation.javaapp.lessons_oop.OopThirteenActivity"
+        <activity
+            android:name=".lessons_oop.OopSixteenActivity"
             android:screenOrientation="portrait">
             <intent-filter>
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="ru.livemotivation.javaapp.lessons_oop.OopTwelveActivity"
+        <activity
+            android:name=".lessons_oop.OopFifteenActivity"
             android:screenOrientation="portrait">
             <intent-filter>
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="ru.livemotivation.javaapp.lessons_oop.OopElevenActivity"
+        <activity
+            android:name=".lessons_oop.OopFourteenActivity"
             android:screenOrientation="portrait">
             <intent-filter>
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="ru.livemotivation.javaapp.lessons_oop.OopTenActivity"
+        <activity
+            android:name=".lessons_oop.OopThirteenActivity"
             android:screenOrientation="portrait">
             <intent-filter>
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="ru.livemotivation.javaapp.lessons_oop.OopNineActivity"
+        <activity
+            android:name=".lessons_oop.OopTwelveActivity"
             android:screenOrientation="portrait">
             <intent-filter>
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="ru.livemotivation.javaapp.lessons_oop.OopEightActivity"
+        <activity
+            android:name=".lessons_oop.OopElevenActivity"
             android:screenOrientation="portrait">
             <intent-filter>
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="ru.livemotivation.javaapp.lessons_oop.OopSevenActivity"
+        <activity
+            android:name=".lessons_oop.OopTenActivity"
             android:screenOrientation="portrait">
             <intent-filter>
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="ru.livemotivation.javaapp.lessons_oop.OopSixActivity"
+        <activity
+            android:name=".lessons_oop.OopNineActivity"
             android:screenOrientation="portrait">
             <intent-filter>
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="ru.livemotivation.javaapp.lessons_oop.OopFiveActivity"
+        <activity
+            android:name=".lessons_oop.OopEightActivity"
             android:screenOrientation="portrait">
             <intent-filter>
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="ru.livemotivation.javaapp.lessons_oop.OopFourActivity"
+        <activity
+            android:name=".lessons_oop.OopSevenActivity"
             android:screenOrientation="portrait">
             <intent-filter>
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="ru.livemotivation.javaapp.lessons_oop.OopThreeActivity"
+        <activity
+            android:name=".lessons_oop.OopSixActivity"
             android:screenOrientation="portrait">
             <intent-filter>
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="ru.livemotivation.javaapp.lessons_java.LessonsEighteenActivity"
+        <activity
+            android:name=".lessons_oop.OopFiveActivity"
             android:screenOrientation="portrait">
             <intent-filter>
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="ru.livemotivation.javaapp.lessons_java.LessonsSeventeenActivity"
+        <activity
+            android:name=".lessons_oop.OopFourActivity"
             android:screenOrientation="portrait">
             <intent-filter>
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="ru.livemotivation.javaapp.lessons_java.LessonsSixteenActivity"
+        <activity
+            android:name=".lessons_oop.OopThreeActivity"
             android:screenOrientation="portrait">
             <intent-filter>
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="ru.livemotivation.javaapp.lessons_java.LessonsFifteenActivity"
+        <activity
+            android:name=".lessons_java.LessonsEighteenActivity"
             android:screenOrientation="portrait">
             <intent-filter>
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="ru.livemotivation.javaapp.lessons_java.LessonsFourteenActivity"
+        <activity
+            android:name=".lessons_java.LessonsSeventeenActivity"
             android:screenOrientation="portrait">
             <intent-filter>
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="ru.livemotivation.javaapp.lessons_java.LessonsThirteenActivity"
+        <activity
+            android:name=".lessons_java.LessonsSixteenActivity"
             android:screenOrientation="portrait">
             <intent-filter>
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="ru.livemotivation.javaapp.lessons_java.LessonsTwelveActivity"
+        <activity
+            android:name=".lessons_java.LessonsFifteenActivity"
             android:screenOrientation="portrait">
             <intent-filter>
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="ru.livemotivation.javaapp.lessons_java.LessonsElevenActivity"
+        <activity
+            android:name=".lessons_java.LessonsFourteenActivity"
             android:screenOrientation="portrait">
             <intent-filter>
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="ru.livemotivation.javaapp.lessons_java.LessonsTenActivity"
+        <activity
+            android:name=".lessons_java.LessonsThirteenActivity"
             android:screenOrientation="portrait">
             <intent-filter>
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="ru.livemotivation.javaapp.lessons_other.OtherTwoActivity"
+        <activity
+            android:name=".lessons_java.LessonsTwelveActivity"
             android:screenOrientation="portrait">
             <intent-filter>
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="ru.livemotivation.javaapp.lessons_other.OtherOneActivity"
+        <activity
+            android:name=".lessons_java.LessonsElevenActivity"
             android:screenOrientation="portrait">
             <intent-filter>
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="ru.livemotivation.javaapp.lessons_collections.CollectionsTwoActivity"
+        <activity
+            android:name=".lessons_java.LessonsTenActivity"
             android:screenOrientation="portrait">
             <intent-filter>
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="ru.livemotivation.javaapp.lessons_collections.CollectionsOneActivity"
+        <activity
+            android:name=".fragment03_books.BookTwo"
             android:screenOrientation="portrait">
             <intent-filter>
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="ru.livemotivation.javaapp.lessons_oop.OopTwoActivity"
+        <activity
+            android:name=".fragment03_books.BookOne"
             android:screenOrientation="portrait">
             <intent-filter>
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="ru.livemotivation.javaapp.lessons_oop.OopOneActivity"
+        <activity
+            android:name=".lessons_collections.CollectionsTwoActivity"
             android:screenOrientation="portrait">
             <intent-filter>
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="ru.livemotivation.javaapp.lessons_java.LessonsNineActivity"
+        <activity
+            android:name=".lessons_collections.CollectionsOneActivity"
             android:screenOrientation="portrait">
             <intent-filter>
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="ru.livemotivation.javaapp.lessons_java.LessonsEightActivity"
+        <activity
+            android:name=".lessons_oop.OopTwoActivity"
             android:screenOrientation="portrait">
             <intent-filter>
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="ru.livemotivation.javaapp.lessons_java.LessonsSevenActivity"
+        <activity
+            android:name=".lessons_oop.OopOneActivity"
             android:screenOrientation="portrait">
             <intent-filter>
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="ru.livemotivation.javaapp.lessons_java.LessonsSixActivity"
+        <activity
+            android:name=".lessons_java.LessonsNineActivity"
             android:screenOrientation="portrait">
             <intent-filter>
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="ru.livemotivation.javaapp.lessons_java.LessonsFiveAriphmeticsActivity"
+        <activity
+            android:name=".lessons_java.LessonsEightActivity"
             android:screenOrientation="portrait">
             <intent-filter>
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="ru.livemotivation.javaapp.lessons_java.LessonsFourConsolActivity"
+        <activity
+            android:name=".lessons_java.LessonsSevenActivity"
             android:screenOrientation="portrait">
             <intent-filter>
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="ru.livemotivation.javaapp.lessons_java.LessonsThreeTypeActivity"
+        <activity
+            android:name=".lessons_java.LessonsSixActivity"
             android:screenOrientation="portrait">
             <intent-filter>
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="ru.livemotivation.javaapp.lessons_java.LessonsTwoVariablesActivity"
+        <activity
+            android:name=".lessons_java.LessonsFiveAriphmeticsActivity"
             android:screenOrientation="portrait">
             <intent-filter>
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="ru.livemotivation.javaapp.lessons_java.LessonsOneHelloWorldActivity"
+        <activity
+            android:name=".lessons_java.LessonsFourConsolActivity"
             android:screenOrientation="portrait">
             <intent-filter>
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="ru.livemotivation.javaapp.MainActivity"
+        <activity
+            android:name=".lessons_java.LessonsThreeTypeActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".lessons_java.LessonsTwoVariablesActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".lessons_java.LessonsOneHelloWorldActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
             android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -317,25 +389,36 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="ru.livemotivation.javaapp.ActivityOneLessonsTheme"
+        <activity
+            android:name=".ActivityOneLessonsTheme"
             android:screenOrientation="portrait">
             <intent-filter>
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="ru.livemotivation.javaapp.ActivityTwoOop"
+        <activity
+            android:name=".ActivityTwoOop"
             android:screenOrientation="portrait">
             <intent-filter>
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="ru.livemotivation.javaapp.ActivityThreeCollections"
+        <activity
+            android:name=".ActivityThreeCollections"
             android:screenOrientation="portrait">
             <intent-filter>
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="ru.livemotivation.javaapp.ActivityFourOther"
+        <activity
+            android:name=".ActivityFourOther"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".fragment03_books.BookThree"
             android:screenOrientation="portrait">
             <intent-filter>
                 <category android:name="android.intent.category.LAUNCHER" />
@@ -346,6 +429,8 @@
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
     </application>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
     <uses-permission android:name="android.permission.INTERNET" />
 
