@@ -14,11 +14,39 @@ import com.zolad.zoominimageview.ZoomInImageView;
 import androidx.annotation.Nullable;
 import androidx.annotation.RequiresApi;
 import androidx.fragment.app.Fragment;
+import ru.livemotivation.javaapp.fragment03_books.BookEight;
+import ru.livemotivation.javaapp.fragment03_books.BookEighteen;
+import ru.livemotivation.javaapp.fragment03_books.BookEleven;
 import ru.livemotivation.javaapp.fragment03_books.BookFive;
+import ru.livemotivation.javaapp.fragment03_books.BookFiveteen;
 import ru.livemotivation.javaapp.fragment03_books.BookFour;
+import ru.livemotivation.javaapp.fragment03_books.BookFourteen;
+import ru.livemotivation.javaapp.fragment03_books.BookNine;
+import ru.livemotivation.javaapp.fragment03_books.BookNineteen;
 import ru.livemotivation.javaapp.fragment03_books.BookOne;
+import ru.livemotivation.javaapp.fragment03_books.BookSeven;
+import ru.livemotivation.javaapp.fragment03_books.BookSeventeen;
 import ru.livemotivation.javaapp.fragment03_books.BookSix;
+import ru.livemotivation.javaapp.fragment03_books.BookSixteen;
+import ru.livemotivation.javaapp.fragment03_books.BookTen;
+import ru.livemotivation.javaapp.fragment03_books.BookThirteen;
+import ru.livemotivation.javaapp.fragment03_books.BookThirty;
+import ru.livemotivation.javaapp.fragment03_books.BookThirtyFour;
+import ru.livemotivation.javaapp.fragment03_books.BookThirtyOne;
+import ru.livemotivation.javaapp.fragment03_books.BookThirtyThree;
+import ru.livemotivation.javaapp.fragment03_books.BookThirtyTwo;
 import ru.livemotivation.javaapp.fragment03_books.BookThree;
+import ru.livemotivation.javaapp.fragment03_books.BookTwelve;
+import ru.livemotivation.javaapp.fragment03_books.BookTwenty;
+import ru.livemotivation.javaapp.fragment03_books.BookTwentyEight;
+import ru.livemotivation.javaapp.fragment03_books.BookTwentyFive;
+import ru.livemotivation.javaapp.fragment03_books.BookTwentyFour;
+import ru.livemotivation.javaapp.fragment03_books.BookTwentyNine;
+import ru.livemotivation.javaapp.fragment03_books.BookTwentyOne;
+import ru.livemotivation.javaapp.fragment03_books.BookTwentySeven;
+import ru.livemotivation.javaapp.fragment03_books.BookTwentySix;
+import ru.livemotivation.javaapp.fragment03_books.BookTwentyThree;
+import ru.livemotivation.javaapp.fragment03_books.BookTwentyTwo;
 import ru.livemotivation.javaapp.fragment03_books.BookTwo;
 
 
@@ -280,8 +308,8 @@ public class Tab3Fragment extends Fragment {
         book07.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-//                Intent intent = new Intent(getContext(), BookFour.class);
-//                startActivity(intent);
+                Intent intent = new Intent(getContext(), BookSeven.class);
+                startActivity(intent);
             }
         });
 
@@ -289,8 +317,8 @@ public class Tab3Fragment extends Fragment {
         book08.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-//                Intent intent = new Intent(getContext(), BookFour.class);
-//                startActivity(intent);
+                Intent intent = new Intent(getContext(), BookEight.class);
+                startActivity(intent);
             }
         });
 
@@ -298,8 +326,8 @@ public class Tab3Fragment extends Fragment {
         book09.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-//                Intent intent = new Intent(getContext(), BookFour.class);
-//                startActivity(intent);
+                Intent intent = new Intent(getContext(), BookNine.class);
+                startActivity(intent);
             }
         });
 
@@ -307,8 +335,8 @@ public class Tab3Fragment extends Fragment {
         book10.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-//                Intent intent = new Intent(getContext(), BookFour.class);
-//                startActivity(intent);
+                Intent intent = new Intent(getContext(), BookTen.class);
+                startActivity(intent);
             }
         });
 
@@ -316,8 +344,8 @@ public class Tab3Fragment extends Fragment {
         book11.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-//                Intent intent = new Intent(getContext(), BookFour.class);
-//                startActivity(intent);
+                Intent intent = new Intent(getContext(), BookEleven.class);
+                startActivity(intent);
             }
         });
 
@@ -325,8 +353,8 @@ public class Tab3Fragment extends Fragment {
         book12.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-//                Intent intent = new Intent(getContext(), BookFour.class);
-//                startActivity(intent);
+                Intent intent = new Intent(getContext(), BookTwelve.class);
+                startActivity(intent);
             }
         });
 
@@ -334,8 +362,8 @@ public class Tab3Fragment extends Fragment {
         book13.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-//                Intent intent = new Intent(getContext(), BookFour.class);
-//                startActivity(intent);
+                Intent intent = new Intent(getContext(), BookThirteen.class);
+                startActivity(intent);
             }
         });
 
@@ -343,8 +371,8 @@ public class Tab3Fragment extends Fragment {
         book14.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-//                Intent intent = new Intent(getContext(), BookFour.class);
-//                startActivity(intent);
+                Intent intent = new Intent(getContext(), BookFourteen.class);
+                startActivity(intent);
             }
         });
 
@@ -352,8 +380,8 @@ public class Tab3Fragment extends Fragment {
         book15.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-//                Intent intent = new Intent(getContext(), BookFour.class);
-//                startActivity(intent);
+                Intent intent = new Intent(getContext(), BookFiveteen.class);
+                startActivity(intent);
             }
         });
 
@@ -361,8 +389,8 @@ public class Tab3Fragment extends Fragment {
         book16.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-//                Intent intent = new Intent(getContext(), BookFour.class);
-//                startActivity(intent);
+                Intent intent = new Intent(getContext(), BookSixteen.class);
+                startActivity(intent);
             }
         });
 
@@ -370,8 +398,8 @@ public class Tab3Fragment extends Fragment {
         book17.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-//                Intent intent = new Intent(getContext(), BookFour.class);
-//                startActivity(intent);
+                Intent intent = new Intent(getContext(), BookSeventeen.class);
+                startActivity(intent);
             }
         });
 
@@ -379,8 +407,8 @@ public class Tab3Fragment extends Fragment {
         book18.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-//                Intent intent = new Intent(getContext(), BookFour.class);
-//                startActivity(intent);
+                Intent intent = new Intent(getContext(), BookEighteen.class);
+                startActivity(intent);
             }
         });
 
@@ -388,8 +416,8 @@ public class Tab3Fragment extends Fragment {
         book19.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-//                Intent intent = new Intent(getContext(), BookFour.class);
-//                startActivity(intent);
+                Intent intent = new Intent(getContext(), BookNineteen.class);
+                startActivity(intent);
             }
         });
 
@@ -397,8 +425,8 @@ public class Tab3Fragment extends Fragment {
         book20.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-//                Intent intent = new Intent(getContext(), BookFour.class);
-//                startActivity(intent);
+                Intent intent = new Intent(getContext(), BookTwenty.class);
+                startActivity(intent);
             }
         });
 
@@ -406,8 +434,8 @@ public class Tab3Fragment extends Fragment {
         book21.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-//                Intent intent = new Intent(getContext(), BookFour.class);
-//                startActivity(intent);
+                Intent intent = new Intent(getContext(), BookTwentyOne.class);
+                startActivity(intent);
             }
         });
 
@@ -415,8 +443,8 @@ public class Tab3Fragment extends Fragment {
         book22.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-//                Intent intent = new Intent(getContext(), BookFour.class);
-//                startActivity(intent);
+                Intent intent = new Intent(getContext(), BookTwentyTwo.class);
+                startActivity(intent);
             }
         });
 
@@ -424,8 +452,8 @@ public class Tab3Fragment extends Fragment {
         book23.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-//                Intent intent = new Intent(getContext(), BookFour.class);
-//                startActivity(intent);
+                Intent intent = new Intent(getContext(), BookTwentyThree.class);
+                startActivity(intent);
             }
         });
 
@@ -433,8 +461,8 @@ public class Tab3Fragment extends Fragment {
         book24.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-//                Intent intent = new Intent(getContext(), BookFour.class);
-//                startActivity(intent);
+                Intent intent = new Intent(getContext(), BookTwentyFour.class);
+                startActivity(intent);
             }
         });
 
@@ -442,8 +470,8 @@ public class Tab3Fragment extends Fragment {
         book25.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-//                Intent intent = new Intent(getContext(), BookFour.class);
-//                startActivity(intent);
+                Intent intent = new Intent(getContext(), BookTwentyFive.class);
+                startActivity(intent);
             }
         });
 
@@ -451,8 +479,8 @@ public class Tab3Fragment extends Fragment {
         book26.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-//                Intent intent = new Intent(getContext(), BookFour.class);
-//                startActivity(intent);
+                Intent intent = new Intent(getContext(), BookTwentySix.class);
+                startActivity(intent);
             }
         });
 
@@ -460,8 +488,8 @@ public class Tab3Fragment extends Fragment {
         book27.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-//                Intent intent = new Intent(getContext(), BookFour.class);
-//                startActivity(intent);
+                Intent intent = new Intent(getContext(), BookTwentySeven.class);
+                startActivity(intent);
             }
         });
 
@@ -469,8 +497,8 @@ public class Tab3Fragment extends Fragment {
         book28.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-//                Intent intent = new Intent(getContext(), BookFour.class);
-//                startActivity(intent);
+                Intent intent = new Intent(getContext(), BookTwentyEight.class);
+                startActivity(intent);
             }
         });
 
@@ -478,8 +506,8 @@ public class Tab3Fragment extends Fragment {
         book29.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-//                Intent intent = new Intent(getContext(), BookFour.class);
-//                startActivity(intent);
+                Intent intent = new Intent(getContext(), BookTwentyNine.class);
+                startActivity(intent);
             }
         });
 
@@ -487,8 +515,8 @@ public class Tab3Fragment extends Fragment {
         book30.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-//                Intent intent = new Intent(getContext(), BookFour.class);
-//                startActivity(intent);
+                Intent intent = new Intent(getContext(), BookThirty.class);
+                startActivity(intent);
             }
         });
 
@@ -496,8 +524,8 @@ public class Tab3Fragment extends Fragment {
         book31.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-//                Intent intent = new Intent(getContext(), BookFour.class);
-//                startActivity(intent);
+                Intent intent = new Intent(getContext(), BookThirtyOne.class);
+                startActivity(intent);
             }
         });
 
@@ -505,8 +533,8 @@ public class Tab3Fragment extends Fragment {
         book32.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-//                Intent intent = new Intent(getContext(), BookFour.class);
-//                startActivity(intent);
+                Intent intent = new Intent(getContext(), BookThirtyTwo.class);
+                startActivity(intent);
             }
         });
 
@@ -514,8 +542,8 @@ public class Tab3Fragment extends Fragment {
         book33.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-//                Intent intent = new Intent(getContext(), BookFour.class);
-//                startActivity(intent);
+                Intent intent = new Intent(getContext(), BookThirtyThree.class);
+                startActivity(intent);
             }
         });
 
@@ -523,8 +551,8 @@ public class Tab3Fragment extends Fragment {
         book34.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-//                Intent intent = new Intent(getContext(), BookFour.class);
-//                startActivity(intent);
+                Intent intent = new Intent(getContext(), BookThirtyFour.class);
+                startActivity(intent);
             }
         });
     }
