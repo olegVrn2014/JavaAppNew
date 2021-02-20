@@ -1,9 +1,83 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".fragment03_books.BookTwentyTwo">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/bottomBar">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="25dp"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/textViewZagolovok"
+                    android:text="@string/book22_title" />
+
+                <com.zolad.zoominimageview.ZoomInImageView
+                    android:id="@+id/book22_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"/>
+
+                <TextView
+                    style="@style/textView"
+                    android:text="@string/book22_description" />
+
+                <Button
+                    android:id="@+id/buttonBook22"
+                    android:layout_width="wrap_content"
+                    android:text="@string/download"
+                    android:paddingLeft="5dp"
+                    android:textSize="20sp"
+                    android:textAllCaps="false"
+                    android:layout_marginEnd="5dp"
+                    android:paddingRight="5dp"
+                    style="@style/button_style_settings"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    style="@style/textViewVersionName"
+                    android:text="@string/versionNameApp" />
+
+            </LinearLayout>
+
+
+        </ScrollView>
+
+        <RelativeLayout
+            android:id="@+id/bottomBar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true">
+
+            <com.google.android.material.bottomnavigation.BottomNavigationView
+                android:id="@+id/bottomNavView_Bar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/white_grey_border_top"
+                app:menu="@menu/bottom_navigation_menu">
+
+
+            </com.google.android.material.bottomnavigation.BottomNavigationView>
+        </RelativeLayout>
+
+
+
+
+
+    </RelativeLayout>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

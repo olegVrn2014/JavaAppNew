@@ -1,5 +1,6 @@
 package ru.livemotivation.javaapp;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
@@ -22,6 +23,7 @@ public class ActivityOneLessonsTheme extends AppCompatActivity {
     private RecyclerView recyclerView;
     private RecyclerView.Adapter adapter;
     private RecyclerView.LayoutManager layoutManager;
+
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -67,6 +69,7 @@ public class ActivityOneLessonsTheme extends AppCompatActivity {
         menuItem.setChecked(true);
 
         bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
+            @SuppressLint("NonConstantResourceId")
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                 switch (item.getItemId()){
@@ -99,5 +102,14 @@ public class ActivityOneLessonsTheme extends AppCompatActivity {
                 return false;
             }
         });
+    }
+    @Override
+    public void onBackPressed() {
+        try {
+            moveTaskToBack(true); android.os.Process.killProcess(android.os.Process.myPid()); System.exit(1);
+        }catch (Exception e){
+          e.printStackTrace();
+        }
+        finish();
     }
 }

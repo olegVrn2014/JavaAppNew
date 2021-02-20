@@ -24,6 +24,7 @@ public class ActivityTwoOop extends AppCompatActivity {
     private RecyclerView.LayoutManager layoutManager;
 
 
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -101,5 +102,6 @@ public class ActivityTwoOop extends AppCompatActivity {
             }
         });
     }
+
 
 }

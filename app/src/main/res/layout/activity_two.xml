@@ -4,6 +4,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:background="@drawable/main_background"
     android:layout_height="match_parent"
     tools:context="MainActivity">
 
@@ -19,14 +20,8 @@
             android:orientation="vertical">
 
             <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@color/colorOrange"
-                android:text="ООП"
-                android:textAlignment="center"
-                android:textColor="@color/colorWhite"
-                android:textSize="40sp"
-                android:textStyle="bold" />
+               style="@style/textViewZagolovok"
+                android:text="ООП" />
 
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/recyclerViewOop"
@@ -34,7 +29,7 @@
                 android:layout_height="match_parent"
                 android:padding="4dp"
                 android:scrollbars="vertical"
-                android:background="@color/colorGrey"/>
+                android:background="@drawable/main_background"/>
 
 
         </LinearLayout>

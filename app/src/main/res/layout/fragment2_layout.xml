@@ -3,6 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:background="@drawable/main_background"
     android:layout_height="wrap_content">
 
     <ScrollView
@@ -16,14 +17,8 @@
             android:orientation="vertical">
 
             <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@color/colorOrange"
-                android:text="@string/explanations"
-                android:textAlignment="center"
-                android:textColor="@color/colorWhite"
-                android:textSize="40sp"
-                android:textStyle="bold" />
+                style="@style/textViewZagolovok"
+                android:text="@string/explanations"/>
 
 
 
@@ -35,7 +30,7 @@
                 android:layout_marginTop="15dp"
                 android:layout_marginEnd="15dp"
                 android:padding="15dp"
-                app:cardCornerRadius="25dp">
+                app:cardCornerRadius="15dp">
 
                 <TextView
                     style="@style/MyCardViewText"
@@ -51,7 +46,7 @@
                 android:layout_marginTop="15dp"
                 android:layout_marginEnd="15dp"
                 android:padding="15dp"
-                app:cardCornerRadius="25dp">
+                app:cardCornerRadius="15dp">
 
                 <TextView
                     style="@style/MyCardViewText"
@@ -67,7 +62,7 @@
                 android:layout_marginTop="15dp"
                 android:layout_marginEnd="15dp"
                 android:padding="15dp"
-                app:cardCornerRadius="25dp">
+                app:cardCornerRadius="15dp">
 
                 <TextView
                     style="@style/MyCardViewText"
@@ -83,7 +78,7 @@
                 android:layout_marginTop="15dp"
                 android:layout_marginEnd="15dp"
                 android:padding="15dp"
-                app:cardCornerRadius="25dp">
+                app:cardCornerRadius="15dp">
 
                 <TextView
                     style="@style/MyCardViewText"
@@ -99,7 +94,7 @@
                 android:layout_marginTop="15dp"
                 android:layout_marginEnd="15dp"
                 android:padding="15dp"
-                app:cardCornerRadius="25dp">
+                app:cardCornerRadius="15dp">
 
                 <TextView
                     style="@style/MyCardViewText"
@@ -115,7 +110,7 @@
                 android:layout_marginTop="15dp"
                 android:layout_marginEnd="15dp"
                 android:padding="15dp"
-                app:cardCornerRadius="25dp">
+                app:cardCornerRadius="15dp">
 
                 <TextView
                     style="@style/MyCardViewText"
@@ -131,7 +126,7 @@
                 android:layout_marginTop="15dp"
                 android:layout_marginEnd="15dp"
                 android:padding="15dp"
-                app:cardCornerRadius="25dp">
+                app:cardCornerRadius="15dp">
 
                 <TextView
                     style="@style/MyCardViewText"
@@ -147,7 +142,7 @@
                 android:layout_marginTop="15dp"
                 android:layout_marginEnd="15dp"
                 android:padding="15dp"
-                app:cardCornerRadius="25dp">
+                app:cardCornerRadius="15dp">
 
                 <TextView
                     style="@style/MyCardViewText"
@@ -163,7 +158,7 @@
                 android:layout_marginTop="15dp"
                 android:layout_marginEnd="15dp"
                 android:padding="15dp"
-                app:cardCornerRadius="25dp">
+                app:cardCornerRadius="15dp">
 
                 <TextView
                     style="@style/MyCardViewText"
@@ -179,7 +174,7 @@
                 android:layout_marginTop="15dp"
                 android:layout_marginEnd="15dp"
                 android:padding="15dp"
-                app:cardCornerRadius="25dp">
+                app:cardCornerRadius="15dp">
 
                 <TextView
                     style="@style/MyCardViewText"
@@ -195,7 +190,7 @@
                 android:layout_marginTop="15dp"
                 android:layout_marginEnd="15dp"
                 android:padding="15dp"
-                app:cardCornerRadius="25dp">
+                app:cardCornerRadius="15dp">
 
                 <TextView
                     style="@style/MyCardViewText"
@@ -211,7 +206,7 @@
                 android:layout_marginTop="15dp"
                 android:layout_marginEnd="15dp"
                 android:padding="15dp"
-                app:cardCornerRadius="25dp">
+                app:cardCornerRadius="15dp">
 
                 <TextView
                     style="@style/MyCardViewText"
@@ -227,7 +222,7 @@
                 android:layout_marginTop="15dp"
                 android:layout_marginEnd="15dp"
                 android:padding="15dp"
-                app:cardCornerRadius="25dp">
+                app:cardCornerRadius="15dp">
 
                 <TextView
                     style="@style/MyCardViewText"
@@ -243,7 +238,7 @@
                 android:layout_marginTop="15dp"
                 android:layout_marginEnd="15dp"
                 android:padding="15dp"
-                app:cardCornerRadius="25dp">
+                app:cardCornerRadius="15dp">
 
                 <TextView
                     style="@style/MyCardViewText"
@@ -259,7 +254,7 @@
                 android:layout_marginTop="15dp"
                 android:layout_marginEnd="15dp"
                 android:padding="15dp"
-                app:cardCornerRadius="25dp">
+                app:cardCornerRadius="15dp">
 
                 <TextView
                     style="@style/MyCardViewText"
@@ -275,7 +270,7 @@
                 android:layout_marginTop="15dp"
                 android:layout_marginEnd="15dp"
                 android:padding="15dp"
-                app:cardCornerRadius="25dp">
+                app:cardCornerRadius="15dp">
 
                 <TextView
                     style="@style/MyCardViewText"
@@ -291,7 +286,7 @@
                 android:layout_marginTop="15dp"
                 android:layout_marginEnd="15dp"
                 android:padding="15dp"
-                app:cardCornerRadius="25dp">
+                app:cardCornerRadius="15dp">
 
                 <TextView
                     style="@style/MyCardViewText"
@@ -307,7 +302,7 @@
                 android:layout_marginTop="15dp"
                 android:layout_marginEnd="15dp"
                 android:padding="15dp"
-                app:cardCornerRadius="25dp">
+                app:cardCornerRadius="15dp">
 
                 <TextView
                     style="@style/MyCardViewText"
@@ -323,7 +318,7 @@
                 android:layout_marginTop="15dp"
                 android:layout_marginEnd="15dp"
                 android:padding="15dp"
-                app:cardCornerRadius="25dp">
+                app:cardCornerRadius="15dp">
 
                 <TextView
                     style="@style/MyCardViewText"
@@ -339,7 +334,7 @@
                 android:layout_marginTop="15dp"
                 android:layout_marginEnd="15dp"
                 android:padding="15dp"
-                app:cardCornerRadius="25dp">
+                app:cardCornerRadius="15dp">
 
                 <TextView
                     style="@style/MyCardViewText"
@@ -355,7 +350,7 @@
                 android:layout_marginTop="15dp"
                 android:layout_marginEnd="15dp"
                 android:padding="15dp"
-                app:cardCornerRadius="25dp">
+                app:cardCornerRadius="15dp">
 
                 <TextView
                     style="@style/MyCardViewText"
@@ -371,7 +366,7 @@
                 android:layout_marginTop="15dp"
                 android:layout_marginEnd="15dp"
                 android:padding="15dp"
-                app:cardCornerRadius="25dp">
+                app:cardCornerRadius="15dp">
 
                 <TextView
                     style="@style/MyCardViewText"
@@ -387,7 +382,7 @@
                 android:layout_marginTop="15dp"
                 android:layout_marginEnd="15dp"
                 android:padding="15dp"
-                app:cardCornerRadius="25dp">
+                app:cardCornerRadius="15dp">
 
                 <TextView
                     style="@style/MyCardViewText"
@@ -403,7 +398,7 @@
                 android:layout_marginTop="15dp"
                 android:layout_marginEnd="15dp"
                 android:padding="15dp"
-                app:cardCornerRadius="25dp">
+                app:cardCornerRadius="15dp">
 
                 <TextView
                     style="@style/MyCardViewText"
@@ -419,7 +414,7 @@
                 android:layout_marginTop="15dp"
                 android:layout_marginEnd="15dp"
                 android:padding="15dp"
-                app:cardCornerRadius="25dp">
+                app:cardCornerRadius="15dp">
 
                 <TextView
                     style="@style/MyCardViewText"
