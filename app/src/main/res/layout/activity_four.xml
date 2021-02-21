@@ -30,55 +30,17 @@
                 style="@style/textViewZagolovok"
                 android:text="@string/settings"/>
 
-            <CheckBox
-                android:id="@+id/checkbox"
-                android:layout_width="match_parent"
-                android:layout_marginTop="20dp"
-                android:textSize="24sp"
-                android:layout_marginStart="5dp"
-                android:layout_marginEnd="5dp"
-                android:textStyle="italic"
-                android:padding="5dp"
-                style="@style/button_style_settings"
-                android:layout_height="wrap_content"
-                android:text="@string/full_screen"
-                android:textAlignment="center"
-                tools:ignore="UseSwitchCompatOrMaterialXml" />
-
-            <Switch
-                android:id="@+id/switch2"
-                android:layout_marginStart="5dp"
-                android:layout_marginEnd="5dp"
-                android:layout_width="match_parent"
-                android:layout_marginTop="20dp"
-                android:layout_marginBottom="10dp"
-                android:textSize="24sp"
-                android:textStyle="italic"
-                android:padding="5dp"
-                style="@style/button_style_settings"
-                android:layout_height="wrap_content"
-                android:text="@string/dark_theme"
-                android:textAlignment="center"
-                tools:ignore="UseSwitchCompatOrMaterialXml" />
-
 
             <Button
+                android:id="@+id/politica"
                 style="@style/button_style_settings"
-                android:paddingLeft="5dp"
-                android:textSize="20sp"
-                android:paddingRight="5dp"
-                android:textAllCaps="false"
+                android:layout_marginTop="50dp"
                 android:layout_marginBottom="10dp"
-                android:text="@string/privacy_policy"/>
-
-            <Button
-                style="@style/button_style_settings"
                 android:paddingLeft="5dp"
-                android:textSize="20sp"
                 android:paddingRight="5dp"
+                android:text="@string/privacy_policy"
                 android:textAllCaps="false"
-                android:layout_marginBottom="10dp"
-                android:text="@string/write"/>
+                android:textSize="20sp" />
 
             <Button
                 android:id="@+id/feedback"

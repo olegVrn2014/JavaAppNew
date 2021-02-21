@@ -7,8 +7,10 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
+import android.view.animation.Animation;
 import android.widget.CheckBox;
 import android.widget.CompoundButton;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
@@ -29,6 +31,7 @@ public class MainActivity extends AppCompatActivity {
 
     private long backPressedTime;
     private Toast backToast;
+
 
 
 

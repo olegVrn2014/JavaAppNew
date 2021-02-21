@@ -5,8 +5,10 @@ import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.Application;
 import android.content.ActivityNotFoundException;
+import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
@@ -19,6 +21,7 @@ import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.CompoundButton;
 import android.widget.Switch;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
@@ -30,22 +33,38 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
+import ru.livemotivation.javaapp.fragment03_books.BookEighteen;
 
 
-public class ActivityFourOther extends AppCompatActivity{
+public class ActivityFourOther extends AppCompatActivity {
 
-    Button exit, estimate, aboutApp, share, feedback;
+    Button exit, estimate, aboutApp, share, feedback, politica;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_four);
 
+        politica = findViewById(R.id.politica);
         feedback = findViewById(R.id.feedback);
         share = findViewById(R.id.share);
         aboutApp = findViewById(R.id.about_app);
         estimate = findViewById(R.id.estimate);
         exit = findViewById(R.id.exit);
+
+        final String politicaConf = "https://java-app.flycricket.io/privacy.html";
+        politica.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                try {
+                    final Intent intent = new Intent(Intent.ACTION_VIEW);
+                    intent.setData(Uri.parse(politicaConf));
+                    startActivity(intent);
+                } catch (Exception e) {
+                    Toast.makeText(ActivityFourOther.this, "Неверная ссылка,обратитесь к разработчику", Toast.LENGTH_SHORT).show();
+                }
+            }
+        });
 
         feedback.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -53,8 +72,8 @@ public class ActivityFourOther extends AppCompatActivity{
                 try {
                     //тут изменить ссылку на свою
                     Toast.makeText(ActivityFourOther.this, "В разработке", Toast.LENGTH_SHORT).show();
-                     startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://play.google.com/store/apps/details?id=com.funplus.kingofavalon")));
-                }catch (Exception e){
+                    startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://play.google.com/store/apps/details?id=com.funplus.kingofavalon")));
+                } catch (Exception e) {
                     e.printStackTrace();
                 }
             }
@@ -66,15 +85,12 @@ public class ActivityFourOther extends AppCompatActivity{
                 final Intent intent = new Intent(Intent.ACTION_SEND);
                 intent.setType("text/plain");
                 //тут изменить ссылку на свою
-                String textToSend="Скачай приложение по изучению языка программирования Java)";
+                String textToSend = "Скачай приложение по изучению языка программирования Java)";
                 String urlJavaApp = "https://play.google.com/store/apps/details?id=com.funplus.kingofavalon";
                 intent.putExtra(Intent.EXTRA_TEXT, textToSend + " " + urlJavaApp);
-                try
-                {
+                try {
                     startActivity(Intent.createChooser(intent, "Поделись с другом"));
-                }
-                catch (android.content.ActivityNotFoundException ex)
-                {
+                } catch (android.content.ActivityNotFoundException ex) {
                     Toast.makeText(getApplicationContext(), "Ошибка", Toast.LENGTH_SHORT).show();
                 }
             }
@@ -85,7 +101,7 @@ public class ActivityFourOther extends AppCompatActivity{
             public void onClick(View v) {
                 try {
                     openAboutApp();
-                }catch (Exception e){
+                } catch (Exception e) {
                     e.printStackTrace();
                 }
             }
@@ -98,7 +114,7 @@ public class ActivityFourOther extends AppCompatActivity{
                     Toast.makeText(ActivityFourOther.this, "В разработке", Toast.LENGTH_SHORT).show();
                     //тут изменить ссылку на свою
                     startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://play.google.com/store/apps/details?id=com.funplus.kingofavalon")));
-                }catch (Exception e){
+                } catch (Exception e) {
                     e.printStackTrace();
                 }
             }
@@ -109,12 +125,11 @@ public class ActivityFourOther extends AppCompatActivity{
             public void onClick(View v) {
                 try {
                     openQuitDialog();
-                }catch (Exception e){
+                } catch (Exception e) {
                     e.printStackTrace();
                 }
             }
         });
-
 
 
         BottomNavigationView bottomNavigationView = (BottomNavigationView) findViewById(R.id.bottomNavView_Bar);
@@ -127,7 +142,7 @@ public class ActivityFourOther extends AppCompatActivity{
             @SuppressLint("NonConstantResourceId")
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-                switch (item.getItemId()){
+                switch (item.getItemId()) {
                     case R.id.ic_main:
                         Intent intent0 = new Intent(ActivityFourOther.this, MainActivity.class);
                         startActivity(intent0);
@@ -157,6 +172,7 @@ public class ActivityFourOther extends AppCompatActivity{
         });
     }
 
+
     private void openQuitDialog() {
         AlertDialog.Builder quitDialog = new AlertDialog.Builder(
                 ActivityFourOther.this);
@@ -165,10 +181,13 @@ public class ActivityFourOther extends AppCompatActivity{
         quitDialog.setPositiveButton("Да!", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
-                moveTaskToBack(true); android.os.Process.killProcess(android.os.Process.myPid()); System.exit(1);
+                moveTaskToBack(true);
+                android.os.Process.killProcess(android.os.Process.myPid());
+                System.exit(1);
                 finish();
             }
         });
+
 
         quitDialog.setNegativeButton("Нет", new DialogInterface.OnClickListener() {
             @Override
@@ -187,7 +206,6 @@ public class ActivityFourOther extends AppCompatActivity{
         aboutAppDialog.setTitle(getResources().getText(R.string.versionNameApp)).setMessage(getResources().getText(R.string.main_description)).setCancelable(true).setIcon(R.drawable.icon);
 
 
-
         aboutAppDialog.setPositiveButton("Ok!", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
@@ -197,5 +215,6 @@ public class ActivityFourOther extends AppCompatActivity{
 
         aboutAppDialog.show();
     }
+
 
 }

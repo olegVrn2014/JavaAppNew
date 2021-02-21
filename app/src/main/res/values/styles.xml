@@ -6,8 +6,9 @@
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
-        <item name="android:windowFullscreen">false</item>
+
     </style>
+
 
     <style name="textView">
         <item name="android:layout_width">match_parent</item>

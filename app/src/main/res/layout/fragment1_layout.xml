@@ -82,12 +82,39 @@
                     android:layout_height="wrap_content"
                     android:gravity="center"
                     android:textStyle="italic"
-                    android:textSize="20sp"
+                    android:textSize="25sp"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/coda"
+                    android:textColor="@color/colorBlack"
+                    android:text="@string/hello_friend_happy" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:textStyle="italic"
+                    android:textSize="25sp"
                     android:layout_marginTop="15dp"
                     android:layout_marginBottom="20dp"
                     android:fontFamily="@font/coda"
                     android:textColor="@color/colorBlack"
-                    android:text="@string/main_description" />
+                    android:text="@string/main_description_fragment01" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:textStyle="italic"
+                    android:textSize="25sp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="20dp"
+                    android:fontFamily="@font/coda"
+                    android:textColor="@color/colorBlack99"
+                    android:text="@string/main_description_fragment02" />
+
+                <TextView
+                    style="@style/textViewVersionName"
+                    android:text="@string/versionNameApp" />
 
             </LinearLayout>
 
